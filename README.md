@@ -37,36 +37,29 @@
 
 <table>
   <tr>
-    <td align="center" valign="top" width="33%">
-      <img src="assets/photo-park-jun.png" width="140" alt="박준"/>
-      <h3>박준</h3>
-      <b>John Park</b><br/><br/>
-      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
-      <br/>
-      Semiconductor &amp; Financial Data Forecasting<br/>
-      AI Strategy &amp; Data Analytics<br/><br/>
-      <a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <img src="assets/photo-max.png" width="140" alt="MAX"/>
-      <h3>MAX</h3>
-      <b>Maximiliano Islas Solis</b><br/><br/>
-      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
-      <br/>
-      Data Analysis &amp; ML<br/>
-      Econometrics<br/><br/>
-      <a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <img src="assets/photo-choi-yeonkyu.png" width="140" alt="최연규"/>
-      <h3>최연규</h3>
-      <b>Yeonkyu Choi</b><br/><br/>
-      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
-      Korea Aerospace Research Institute (KARI)<br/>
-      <br/>
-      Agricultural Production Analysis<br/>
-      Earth Environment
-    </td>
+    <td align="center" valign="middle" width="33%"><img src="assets/photo-park-jun.png" width="140" alt="박준"/></td>
+    <td align="center" valign="middle" width="33%"><img src="assets/photo-max.png" width="140" alt="MAX"/></td>
+    <td align="center" valign="middle" width="33%"><img src="assets/photo-choi-yeonkyu.png" width="140" alt="최연규"/></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" width="33%"><h3>박준</h3><b>John Park</b></td>
+    <td align="center" valign="middle" width="33%"><h3>MAX</h3><b>Maximiliano Islas Solis</b></td>
+    <td align="center" valign="middle" width="33%"><h3>최연규</h3><b>Yeonkyu Choi</b></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></td>
+    <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></td>
+    <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>Korea Aerospace Research Institute</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial Data Forecasting<br/>AI Strategy &amp; Data Analytics</td>
+    <td align="center" valign="middle" width="33%">Data Analysis &amp; ML<br/>Econometrics</td>
+    <td align="center" valign="middle" width="33%">Agricultural Production Analysis<br/>Earth Environment</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" width="33%"><a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a></td>
+    <td align="center" valign="middle" width="33%"><a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a></td>
+    <td align="center" valign="middle" width="33%">—</td>
   </tr>
 </table>
 
