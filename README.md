@@ -59,7 +59,7 @@ Team IMPACT Lab은 광주과학기술원(GIST) AI정책전략대학원(AIX) <b>�
     <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></td>
   </tr>
   <tr>
-    <td align="center" valign="middle" width="33%">Data Analysis &amp; ML<br/>Econometrics</td>
+    <td align="center" valign="middle" width="33%">Data Analysis &amp;<br/>ML Econometrics</td>
     <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial<br/>Data Forecasting<br/>AI Strategy &amp; Data Analytics</td>
     <td align="center" valign="middle" width="33%">Agricultural Production Analysis<br/>Earth Environment</td>
   </tr>
