@@ -344,7 +344,7 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
       <img src="assets/photo-park-jun.png" width="120" alt="박준"/><br/>
       <b>박준</b> <sub>John Park</sub><br/>
       <sub>M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br/>
-      <sub>반도체·금융 데이터 예측 연구 · AI 전략·데이터 분석</sub><br/>
+      <sub>Semiconductor &amp; Financial Data Forecasting · AI Strategy &amp; Data Analytics</sub><br/>
       <sub><a href="https://github.com/parkjohn10277">@parkjohn10277</a></sub>
     </td>
     <td align="center" valign="top" width="240">
