@@ -465,6 +465,16 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 
 <br/>
 
+<div align="center">
+  <a href="https://impact.gist.ac.kr/team/professor.php"><img src="assets/photo-prof-kong.png" width="150" alt="Prof. Duk-Jo Kong"/></a>
+  <h3>Prof. Duk-Jo Kong · 공득조 교수님</h3>
+  Vice Dean, Assistant Professor<br/>
+  GIST AI Policy &amp; Strategy Graduate School (AIX School)<br/>
+  <a href="https://impact.gist.ac.kr/team/professor.php"><b>IMPACT Lab · Professor</b></a>
+</div>
+
+<br/>
+
 **Special thanks to IMPACT Lab.**
 
 This work was carried out at the [IMPACT Lab](https://impact.gist.ac.kr/main/main.php) led by **Prof. Duk-Jo Kong** at the Graduate School of AI Policy and Strategy (AIX), Gwangju Institute of Science and Technology (GIST). We thank the members of the lab for their discussions and support throughout the project.
