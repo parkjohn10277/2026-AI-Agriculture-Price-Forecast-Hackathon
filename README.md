@@ -21,7 +21,54 @@
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
 
-**[리더보드](#-본선-리더보드)**&nbsp;&nbsp;·&nbsp;&nbsp;**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**&nbsp;&nbsp;·&nbsp;&nbsp;**[팀](#-팀)**
+**[팀](#-팀)**&nbsp;&nbsp;·&nbsp;&nbsp;**[리더보드](#-본선-리더보드)**&nbsp;&nbsp;·&nbsp;&nbsp;**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**
+
+</div>
+
+---
+
+## 👥 팀
+
+<div align="center">
+
+**Team IMPACT Lab** · 2026 AI 농산물 가격예측 온라인 해커톤 본선
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%">
+      <img src="assets/photo-park-jun.png" width="140" alt="박준"/>
+      <h3>박준</h3>
+      <b>John Park</b><br/><br/>
+      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
+      <br/>
+      Semiconductor &amp; Financial Data Forecasting<br/>
+      AI Strategy &amp; Data Analytics<br/><br/>
+      <a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <img src="assets/photo-max.png" width="140" alt="MAX"/>
+      <h3>MAX</h3>
+      <b>Maximiliano Islas Solis</b><br/><br/>
+      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
+      <br/>
+      Data Analysis &amp; ML<br/>
+      Econometrics<br/><br/>
+      <a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <img src="assets/photo-choi-yeonkyu.png" width="140" alt="최연규"/>
+      <h3>최연규</h3>
+      <b>Yeonkyu Choi</b><br/><br/>
+      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
+      Korea Aerospace Research Institute (KARI)<br/>
+      <br/>
+      Agricultural Production Analysis<br/>
+      Earth Environment
+    </td>
+  </tr>
+</table>
 
 </div>
 
@@ -327,53 +374,6 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 - **2025 배추는 전례 없는 해였습니다.** 1–2월 +25%, 9월 −23%로 2020–2024 어느 해와도 다른 흐름이었고, 과거로만 배운 모델이 이를 완전히 맞힐 수는 없습니다.
 - **검증 해석.** 배율 산출과 평가에 같은 폴드를 썼고, 2순 무·양파와 3순 양파는 2020–2024 검증에서 block 기준선보다 낫지 않았습니다.
 - **플랫폼 재현.** 재학습 시 CPU 아키텍처가 다르면 장기 배추 예측이 1–3% 범위에서 달라질 수 있습니다.
-
----
-
-## 👥 팀
-
-<div align="center">
-
-**Team IMPACT Lab** · 2026 AI 농산물 가격예측 온라인 해커톤 본선
-
-<br/>
-
-<table>
-  <tr>
-    <td align="center" valign="top" width="33%">
-      <img src="assets/photo-park-jun.png" width="140" alt="박준"/>
-      <h3>박준</h3>
-      <b>John Park</b><br/><br/>
-      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
-      <br/>
-      Semiconductor &amp; Financial Data Forecasting<br/>
-      AI Strategy &amp; Data Analytics<br/><br/>
-      <a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <img src="assets/photo-max.png" width="140" alt="MAX"/>
-      <h3>MAX</h3>
-      <b>Maximiliano Islas Solis</b><br/><br/>
-      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
-      <br/>
-      Data Analysis &amp; ML<br/>
-      Econometrics<br/><br/>
-      <a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <img src="assets/photo-choi-yeonkyu.png" width="140" alt="최연규"/>
-      <h3>최연규</h3>
-      <b>Yeonkyu Choi</b><br/><br/>
-      M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>
-      Korea Aerospace Research Institute (KARI)<br/>
-      <br/>
-      Agricultural Production Analysis<br/>
-      Earth Environment
-    </td>
-  </tr>
-</table>
-
-</div>
 
 ## 🙏 Acknowledgements
 
