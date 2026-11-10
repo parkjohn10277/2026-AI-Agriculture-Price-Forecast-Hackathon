@@ -1,41 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-label="MAPE: 최근값 유지 대비 모델">
-<rect width="1000" height="380" rx="18" fill="#0E1511"/>
-<text x="40" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#E9EEEA">본선 MAPE — 최근값 유지(naive) 대비</text>
-<text x="40" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#9AA79F">낮을수록 좋음 · 모델 = 본선 리더보드 최고 기록 · naive = 같은 12개 기준일 자체 채점</text>
-<line x1="210.0" y1="96" x2="210.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="210.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">0%</text>
-<line x1="325.0" y1="96" x2="325.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="325.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">3%</text>
-<line x1="440.0" y1="96" x2="440.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="440.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">6%</text>
-<line x1="555.0" y1="96" x2="555.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="555.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">9%</text>
-<line x1="670.0" y1="96" x2="670.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="670.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">12%</text>
-<line x1="785.0" y1="96" x2="785.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="785.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">15%</text>
-<line x1="900.0" y1="96" x2="900.0" y2="332" stroke="#26332B" stroke-width="1"/>
-<text x="900.0" y="354" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">18%</text>
-<text x="40" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#E9EEEA">10일 예측 · 70%</text>
-<rect x="210" y="116" width="391.0" height="16" rx="4" fill="#4A564E"/>
-<text x="609.0" y="129" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">10.20</text>
-<rect x="210" y="136" width="349.7" height="16" rx="4" fill="#74C69D"/>
-<text x="567.7" y="149" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#74C69D">9.12  (−1.08pt)</text>
-<text x="40" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#E9EEEA">2순 후 · 15%</text>
-<rect x="210" y="172" width="603.0" height="16" rx="4" fill="#4A564E"/>
-<text x="821.0" y="185" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">15.73</text>
-<rect x="210" y="192" width="439.4" height="16" rx="4" fill="#74C69D"/>
-<text x="657.4" y="205" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#74C69D">11.46  (−4.27pt)</text>
-<text x="40" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#E9EEEA">3순 후 · 15%</text>
-<rect x="210" y="228" width="657.0" height="16" rx="4" fill="#4A564E"/>
-<text x="875.0" y="241" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">17.14</text>
-<rect x="210" y="248" width="415.6" height="16" rx="4" fill="#74C69D"/>
-<text x="633.6" y="261" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#74C69D">10.84  (−6.30pt)</text>
-<text x="40" y="308" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#E9EEEA">종합 (가중)</text>
-<rect x="210" y="284" width="462.7" height="16" rx="4" fill="#4A564E"/>
-<text x="680.7" y="297" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#9AA79F">12.07</text>
-<rect x="210" y="304" width="373.0" height="16" rx="4" fill="#74C69D"/>
-<text x="591.0" y="317" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#74C69D">9.73  (−2.34pt)</text>
-<rect x="750" y="34" width="14" height="14" rx="3" fill="#4A564E"/><text x="770" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#9AA79F">naive</text>
-<rect x="830" y="34" width="14" height="14" rx="3" fill="#74C69D"/><text x="850" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#9AA79F">v11-zero</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="본선 MAPE와 naive 비교">
+<defs><linearGradient id="bgdark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A221E"/><stop offset="1" stop-color="#0F3A33"/></linearGradient><linearGradient id="ttdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3B8"/><stop offset="1" stop-color="#3FBF8A"/></linearGradient><linearGradient id="gldark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12332D" stop-opacity="0.95"/><stop offset="1" stop-color="#12332D" stop-opacity="0.55"/></linearGradient><filter id="shdark" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.14"/></filter></defs>
+<rect width="1280" height="420" rx="24" fill="url(#bgdark)"/>
+<text x="48" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="24" font-weight="800" fill="#E6F6F0">본선 MAPE — 최근값 유지(naive) 대비</text>
+<text x="48" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#93B8AC">낮을수록 좋음 · 모델 = 본선 리더보드 최고 기록 · naive = 같은 12개 기준일 자체 채점</text>
+<rect x="980" y="42" width="16" height="16" rx="4" fill="#355A50"/><text x="1004" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#93B8AC">naive</text>
+<rect x="1080" y="42" width="16" height="16" rx="4" fill="#5FD3A0"/><text x="1104" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#93B8AC">v11-zero</text>
+<line x1="250.0" y1="112" x2="250.0" y2="370" stroke="#1E4A41"/>
+<text x="250.0" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">0%</text>
+<line x1="378.3" y1="112" x2="378.3" y2="370" stroke="#1E4A41"/>
+<text x="378.3" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">3%</text>
+<line x1="506.7" y1="112" x2="506.7" y2="370" stroke="#1E4A41"/>
+<text x="506.7" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">6%</text>
+<line x1="635.0" y1="112" x2="635.0" y2="370" stroke="#1E4A41"/>
+<text x="635.0" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">9%</text>
+<line x1="763.3" y1="112" x2="763.3" y2="370" stroke="#1E4A41"/>
+<text x="763.3" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">12%</text>
+<line x1="891.7" y1="112" x2="891.7" y2="370" stroke="#1E4A41"/>
+<text x="891.7" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">15%</text>
+<line x1="1020.0" y1="112" x2="1020.0" y2="370" stroke="#1E4A41"/>
+<text x="1020.0" y="394" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">18%</text>
+<text x="48" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#E6F6F0">10일 예측</text>
+<text x="48" y="166" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">비중 70%</text>
+<rect x="250" y="124" width="436.3" height="18" rx="9" fill="#355A50"/>
+<text x="696.3" y="138" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">10.20</text>
+<rect x="250" y="148" width="390.3" height="22" rx="11" fill="#5FD3A0"/>
+<text x="650.3" y="165" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#5FD3A0">9.12</text>
+<rect x="1070" y="130" width="170" height="36" rx="18" fill="#173F37" stroke="#2E6A5C"/>
+<text x="1155" y="154" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#5FD3A0">−1.08pt · −11%</text>
+<text x="48" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#E6F6F0">2순 후</text>
+<text x="48" y="232" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">비중 15%</text>
+<rect x="250" y="190" width="672.9" height="18" rx="9" fill="#355A50"/>
+<text x="932.9" y="204" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">15.73</text>
+<rect x="250" y="214" width="490.3" height="22" rx="11" fill="#5FD3A0"/>
+<text x="750.3" y="231" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#5FD3A0">11.46</text>
+<rect x="1070" y="196" width="170" height="36" rx="18" fill="#173F37" stroke="#2E6A5C"/>
+<text x="1155" y="220" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#5FD3A0">−4.27pt · −27%</text>
+<text x="48" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#E6F6F0">3순 후</text>
+<text x="48" y="298" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">비중 15%</text>
+<rect x="250" y="256" width="733.2" height="18" rx="9" fill="#355A50"/>
+<text x="993.2" y="270" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">17.14</text>
+<rect x="250" y="280" width="463.8" height="22" rx="11" fill="#5FD3A0"/>
+<text x="723.8" y="297" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#5FD3A0">10.84</text>
+<rect x="1070" y="262" width="170" height="36" rx="18" fill="#173F37" stroke="#2E6A5C"/>
+<text x="1155" y="286" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#5FD3A0">−6.30pt · −37%</text>
+<rect x="30" y="314" width="1220" height="64" rx="14" fill="#11302A" fill-opacity="0.6"/>
+<text x="48" y="344" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#E6F6F0">종합</text>
+<text x="48" y="364" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">비중 가중</text>
+<rect x="250" y="322" width="516.3" height="18" rx="9" fill="#355A50"/>
+<text x="776.3" y="336" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">12.07</text>
+<rect x="250" y="346" width="416.3" height="22" rx="11" fill="#5FD3A0"/>
+<text x="676.3" y="363" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#5FD3A0">9.73</text>
+<rect x="1070" y="328" width="170" height="36" rx="18" fill="#173F37" stroke="#2E6A5C"/>
+<text x="1155" y="352" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#5FD3A0">−2.34pt · −19%</text>
 </svg>

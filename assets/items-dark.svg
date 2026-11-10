@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="예측 대상 5품목">
+<defs><linearGradient id="bgdark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A221E"/><stop offset="1" stop-color="#0F3A33"/></linearGradient><linearGradient id="ttdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3B8"/><stop offset="1" stop-color="#3FBF8A"/></linearGradient><linearGradient id="gldark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12332D" stop-opacity="0.95"/><stop offset="1" stop-color="#12332D" stop-opacity="0.55"/></linearGradient><filter id="shdark" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.14"/></filter></defs>
+<g filter="url(#shdark)"><rect x="22" y="14" width="232" height="266" rx="22" fill="#11302A" stroke="#2E6A5C"/></g>
+<rect x="22" y="14" width="232" height="112" rx="22" fill="url(#bgdark)"/><rect x="22" y="104" width="232" height="22" fill="url(#bgdark)"/>
+<g transform="translate(138.0,72) scale(0.95)"><ellipse cx="0" cy="8" rx="34" ry="30" fill="#7CC36A"/><ellipse cx="-12" cy="4" rx="20" ry="28" fill="#A9DB8C"/><ellipse cx="12" cy="4" rx="20" ry="28" fill="#93D17A"/><ellipse cx="0" cy="0" rx="14" ry="30" fill="#E9F7D9"/><path d="M0,-28 C-3,-5 -3,20 0,36" stroke="#C7E6B0" stroke-width="2.5" fill="none"/><path d="M-30,10 C-20,30 20,30 30,10" stroke="#5DA850" stroke-width="3" fill="none"/></g>
+<text x="42" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#E6F6F0">배추</text>
+<text x="234" y="160" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">10kg · 가중 ×2.0</text>
+<line x1="42" y1="174" x2="234" y2="174" stroke="#1E4A41"/>
+<text x="42" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">10일</text>
+<text x="88" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">et + 감쇠·앵커</text>
+<text x="42" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">2·3순</text>
+<text x="88" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">HGB pooled_mw</text>
+<text x="42" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">특이</text>
+<text x="88" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">설날·추석 배율</text>
+<g filter="url(#shdark)"><rect x="269" y="14" width="232" height="266" rx="22" fill="#11302A" stroke="#2E6A5C"/></g>
+<rect x="269" y="14" width="232" height="112" rx="22" fill="url(#bgdark)"/><rect x="269" y="104" width="232" height="22" fill="url(#bgdark)"/>
+<g transform="translate(385.0,72) scale(0.95)"><path d="M-8,-30 C-20,-50 -26,-44 -20,-34 M0,-32 C0,-56 8,-56 6,-34 M8,-30 C22,-48 28,-40 18,-30" stroke="#5DA850" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M-18,-30 C-22,0 -12,30 0,44 C12,30 22,0 18,-30 Z" fill="#F6F3EA" stroke="#D9D2BF" stroke-width="2"/><path d="M-17,-28 C-14,-20 14,-20 17,-28" fill="#BFE3A6"/><path d="M-8,0 h6 M4,12 h6 M-6,24 h5" stroke="#D9D2BF" stroke-width="2" stroke-linecap="round"/></g>
+<text x="289" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#E6F6F0">무</text>
+<text x="481" y="160" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">20kg · 가중 ×2.0</text>
+<line x1="289" y1="174" x2="481" y2="174" stroke="#1E4A41"/>
+<text x="289" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">10일</text>
+<text x="335" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">6항 로그 혼합</text>
+<text x="289" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">2·3순</text>
+<text x="335" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">ET 산지 기상</text>
+<text x="289" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">특이</text>
+<text x="335" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">추석·설날 배율</text>
+<g filter="url(#shdark)"><rect x="516" y="14" width="232" height="266" rx="22" fill="#11302A" stroke="#2E6A5C"/></g>
+<rect x="516" y="14" width="232" height="112" rx="22" fill="url(#bgdark)"/><rect x="516" y="104" width="232" height="22" fill="url(#bgdark)"/>
+<g transform="translate(632.0,72) scale(0.95)"><path d="M0,-40 C4,-26 34,-14 32,12 C30,34 12,40 0,40 C-12,40 -30,34 -32,12 C-34,-14 -4,-26 0,-40 Z" fill="#D9A56B"/><path d="M0,-38 C-2,-20 -14,0 -12,36 M0,-38 C2,-20 14,0 12,36 M0,-38 V38" stroke="#B9844C" stroke-width="2" fill="none"/><path d="M-2,-40 C-4,-50 4,-52 2,-40" stroke="#8C6A3F" stroke-width="3" fill="none"/><path d="M-6,40 l-4,8 M0,40 v9 M6,40 l4,8" stroke="#B9844C" stroke-width="2"/></g>
+<text x="536" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#E6F6F0">양파</text>
+<text x="728" y="160" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">1kg · 가중 ×2.0</text>
+<line x1="536" y1="174" x2="728" y2="174" stroke="#1E4A41"/>
+<text x="536" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">10일</text>
+<text x="582" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">h1last · 거리별 ET</text>
+<text x="536" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">2·3순</text>
+<text x="582" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">3항 혼합 / clip</text>
+<text x="536" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">특이</text>
+<text x="582" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">—</text>
+<g filter="url(#shdark)"><rect x="763" y="14" width="232" height="266" rx="22" fill="#11302A" stroke="#2E6A5C"/></g>
+<rect x="763" y="14" width="232" height="112" rx="22" fill="url(#bgdark)"/><rect x="763" y="104" width="232" height="22" fill="url(#bgdark)"/>
+<g transform="translate(879.0,72) scale(0.95)"><path d="M0,-40 C2,-30 6,-26 12,-22 C34,-12 36,20 22,34 C12,42 -12,42 -22,34 C-36,20 -34,-12 -12,-22 C-6,-26 -2,-30 0,-40 Z" fill="#F7F1E6" stroke="#DCCFB8" stroke-width="2"/><path d="M0,-20 C-8,0 -8,24 0,40 M0,-20 C8,0 8,24 0,40 M-14,-14 C-24,6 -20,28 -12,38 M14,-14 C24,6 20,28 12,38" stroke="#E2D5BF" stroke-width="2" fill="none"/><path d="M-4,-40 h8" stroke="#C9B48F" stroke-width="3" stroke-linecap="round"/></g>
+<text x="783" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#E6F6F0">깐마늘</text>
+<text x="975" y="160" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">1kg · 가중 ×1.2</text>
+<line x1="783" y1="174" x2="975" y2="174" stroke="#1E4A41"/>
+<text x="783" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">10일</text>
+<text x="829" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">last</text>
+<text x="783" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">2·3순</text>
+<text x="829" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">last</text>
+<text x="783" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">특이</text>
+<text x="829" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">변동 0.1–0.4%</text>
+<g filter="url(#shdark)"><rect x="1010" y="14" width="232" height="266" rx="22" fill="#11302A" stroke="#2E6A5C"/></g>
+<rect x="1010" y="14" width="232" height="112" rx="22" fill="url(#bgdark)"/><rect x="1010" y="104" width="232" height="22" fill="url(#bgdark)"/>
+<g transform="translate(1126.0,72) scale(0.95)"><path d="M-6,-34 C-14,-44 -6,-52 4,-46" stroke="#4E8A3A" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M-12,-34 C-4,-40 12,-38 16,-30 C22,-8 14,22 -8,44 C-10,46 -12,44 -10,40 C2,16 -2,-10 -16,-24 C-20,-28 -18,-32 -12,-34 Z" fill="#E2644F"/><path d="M6,-28 C12,-14 10,6 2,22" stroke="#F08A74" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/></g>
+<text x="1030" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#E6F6F0">건고추</text>
+<text x="1222" y="160" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#93B8AC">600g · 가중 ×1.2</text>
+<line x1="1030" y1="174" x2="1222" y2="174" stroke="#1E4A41"/>
+<text x="1030" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">10일</text>
+<text x="1076" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">last</text>
+<text x="1030" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">2·3순</text>
+<text x="1076" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">last</text>
+<text x="1030" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">특이</text>
+<text x="1076" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#E6F6F0">변동 0.1–0.4%</text>
+</svg>

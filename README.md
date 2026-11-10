@@ -7,18 +7,18 @@
 
 <br/>
 
-[![Python](https://img.shields.io/badge/CPython-3.14.8-2E6B4E?style=flat-square&logo=python&logoColor=white)](model/requirements.txt)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-2E6B4E?style=flat-square&logo=scikitlearn&logoColor=white)](model/requirements.txt)
-[![CPU only](https://img.shields.io/badge/compute-CPU%20only-5B675F?style=flat-square)](#-재현하기)
-[![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C7782A?style=flat-square)](docs/REPRODUCIBILITY.md)
-[![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-18231D?style=flat-square)](https://hackathon.imaginationgroup.co.kr/nongnet)
+[![Python](https://img.shields.io/badge/CPython-3.14.8-12805A?style=for-the-badge&logo=python&logoColor=white)](model/requirements.txt)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-12805A?style=for-the-badge&logo=scikitlearn&logoColor=white)](model/requirements.txt)
+[![CPU only](https://img.shields.io/badge/compute-CPU%20only-0E5B52?style=for-the-badge)](#-재현하기)
+[![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C98E52?style=for-the-badge)](docs/REPRODUCIBILITY.md)
+[![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-0B4D36?style=for-the-badge)](https://hackathon.imaginationgroup.co.kr/nongnet)
 
 **2026 AI 농산물 가격예측 온라인 해커톤 본선 · IMPACT Lab (GIST AI정책전략대학원)**
 
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
 
-[결과](#-결과) · [핵심 아이디어](#-핵심-아이디어) · [데이터와 경계](#-데이터와-미래-정보-차단) · [모델](#-모델) · [검증](#-20222024-전진-검증) · [재현하기](#-재현하기) · [문서](#-문서)
+**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**
 
 </div>
 
@@ -39,28 +39,44 @@
 
 <sub>리더보드 수치는 2026-11-08 본선 포털의 모델별 최고 기록입니다(제출 ID `efb84521` · `8a444125` · `89502728`). naive는 같은 12개 기준일을 대회 산식으로 자체 채점한 값입니다. 최종 순위는 운영진 재현 검증 후 확정됩니다.</sub>
 
-## 🧭 과제
-
-| 항목 | 내용 |
-|:--|:--|
-| 대상 품목 | 배추(10kg) · 무(20kg) · 양파(1kg) · 깐마늘(1kg) · 건고추(600g), aT 공식 일별 경락가격 |
-| 트랙 | **10일 예측** — 기준일 다음 날부터 10일간 일별 가격 · **2순 후 / 3순 후** — 상순(1–10일)·중순(11–20일)·하순(21일–말일) 단위 평균가격 |
-| 기준일 | 2024-12-31 ~ 2025-11-30 월말 12개 |
-| 지표 | 품목 가중 MAPE (배추·무·양파 2, 깐마늘·건고추 1.2), 종합 = 70 / 15 / 15 |
-| 핵심 규정 | 학습·튜닝·모델 선택은 2020–2024 자료로만. 2025 자료는 각 기준일 **이전** 관측을 추론 입력으로만 사용 |
-
 ## 📈 결과
 
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/results-dark.svg">
-  <img alt="본선 MAPE: naive 대비" src="assets/results-light.svg" width="88%">
+  <img alt="본선 MAPE: naive 대비" src="assets/results-light.svg" width="100%">
 </picture>
 </div>
 
 - **장기 트랙에서 차이가 가장 컸습니다.** 2순 후 −4.27pt, 3순 후 −6.30pt로 naive 오차를 각각 27%, 37% 줄였습니다.
 - **10일 예측은 노이즈 바닥이 높습니다.** 배추·무의 하루 가격 변동 중앙값이 6–8%라 10일 평균 수준을 완벽히 알아도 일별 MAPE가 약 6% 남습니다. 모델이 기여할 수 있는 폭은 naive 10.2%와 그 사이입니다.
 - **깐마늘·건고추는 최근값 유지가 최적이었습니다.** 10일 사이 가격 변동 중앙값이 0.1–0.4%라 세 트랙 모두 `last` 규칙으로 고정했습니다.
+
+## 🏆 대회와 과제
+
+<div align="center">
+<img alt="2026 AI 농산물 가격예측 온라인 해커톤 포스터" src="assets/competition-poster.jpg" width="92%">
+<br/><sub>2026 AI 농산물 가격예측 온라인 해커톤 · 주최 농림축산식품부 · 한국농수산식품유통공사(aT) · 주관 상상력집단 · <a href="https://hackathon.imaginationgroup.co.kr/nongnet">대회 페이지</a></sub>
+</div>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <img alt="대회 일정: 참가 신청 09.07 → 예선 마감 10.18 → 본선 진출 10.23 → 본선 10.26–11.08 → 재현 검증 11.09–11.12 → 시상 11.20" src="assets/timeline-light.svg" width="100%">
+</picture>
+
+| 항목 | 내용 |
+|:--|:--|
+| 트랙 | **10일 예측** — 기준일 다음 날부터 10일간 일별 가격 · **2순 후 / 3순 후** — 상순(1–10일)·중순(11–20일)·하순(21일–말일) 단위 평균가격 |
+| 기준일 | 2024-12-31 ~ 2025-11-30 월말 12개 |
+| 지표 | 품목 가중 MAPE (배추·무·양파 2, 깐마늘·건고추 1.2), 종합 = 70 / 15 / 15 |
+| 핵심 규정 | 학습·튜닝·모델 선택은 2020–2024 자료로만. 2025 자료는 각 기준일 **이전** 관측을 추론 입력으로만 사용 |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/items-dark.svg">
+  <img alt="예측 대상 5품목과 품목별 규칙 요약" src="assets/items-light.svg" width="100%">
+</picture>
 
 ## 💡 핵심 아이디어
 
@@ -264,7 +280,7 @@ agri-price-forecast-2026/
 │   ├── preliminary/            #   예선 아이디어 예측 활용안
 │   └── presentation/           #   본선 발표 자료
 ├── data/                       # (git 제외) 운영진 배포 데이터 배치 위치
-└── assets/                     # README 그래픽
+└── assets/                     # README 그래픽 · 대회 포스터 (scripts/dev/make_assets.py)
 ```
 
 ## 📚 문서
@@ -293,12 +309,16 @@ agri-price-forecast-2026/
 - **검증 해석.** 배율 산출과 평가에 같은 폴드를 썼고, 2순 무·양파와 3순 양파는 2020–2024 검증에서 block 기준선보다 낫지 않았습니다.
 - **플랫폼 재현.** 재학습 시 CPU 아키텍처가 다르면 장기 배추 예측이 1–3% 범위에서 달라질 수 있습니다.
 
+---
+
 ## 👥 팀
 
 **IMPACT Lab** · GIST AI정책전략대학원 — 박준
 
-<sub>대회: 2026 AI 농산물 가격예측 온라인 해커톤 (주최 한국농수산식품유통공사 aT · 주관 상상력집단). 이 저장소는 참가팀의 산출물이며 주최·주관 기관의 공식 자료가 아닙니다. 대회 규정·양식·배포 데이터는 포함하지 않았습니다.</sub>
+<sub>대회: 2026 AI 농산물 가격예측 온라인 해커톤 (주최 농림축산식품부 · 한국농수산식품유통공사 aT · 주관 상상력집단). 이 저장소는 참가팀의 산출물이며 주최·주관 기관의 공식 자료가 아닙니다. 대회 포스터는 주최 측 홍보 이미지이며, 대회 규정·양식·배포 데이터는 포함하지 않았습니다.</sub>
 
 ## 📄 라이선스
 
 검증 기간 중에는 **All rights reserved**입니다. 공개 전환 시 라이선스를 정해 `LICENSE` 파일을 추가합니다. 인용은 [CITATION.cff](CITATION.cff)를 참고하세요.
+
+<div align="center"><sub>🥬 🧅 🧄 🌶️&nbsp;&nbsp;허용된 자료만 보고, 기준일 이전만 읽고, 누구나 다시 돌릴 수 있는 가격 예보 — IMPACT Lab</sub></div>

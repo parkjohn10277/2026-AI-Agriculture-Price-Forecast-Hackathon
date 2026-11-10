@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="210" viewBox="0 0 1280 210" role="img" aria-label="대회 일정">
+<defs><linearGradient id="bgdark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A221E"/><stop offset="1" stop-color="#0F3A33"/></linearGradient><linearGradient id="ttdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3B8"/><stop offset="1" stop-color="#3FBF8A"/></linearGradient><linearGradient id="gldark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12332D" stop-opacity="0.95"/><stop offset="1" stop-color="#12332D" stop-opacity="0.55"/></linearGradient><filter id="shdark" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.14"/></filter></defs>
+<rect width="1280" height="210" rx="24" fill="url(#bgdark)"/>
+<line x1="90" y1="92" x2="1190" y2="92" stroke="#2E6A5C" stroke-width="4" stroke-linecap="round"/>
+<line x1="90" y1="92" x2="860.0" y2="92" stroke="#5FD3A0" stroke-width="4" stroke-linecap="round"/>
+<circle cx="90.0" cy="92" r="13" fill="#5FD3A0" stroke="#5FD3A0" stroke-width="3"/>
+<path d="M85.0,92 l3.5,4 l7,-8" stroke="#11302A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90.0" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#93B8AC">09.07</text>
+<text x="90.0" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#E6F6F0">참가 신청</text>
+<text x="90.0" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#93B8AC">아이디어 기술서 접수</text>
+<circle cx="310.0" cy="92" r="13" fill="#5FD3A0" stroke="#5FD3A0" stroke-width="3"/>
+<path d="M305.0,92 l3.5,4 l7,-8" stroke="#11302A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="310.0" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#93B8AC">10.18</text>
+<text x="310.0" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#E6F6F0">예선 마감</text>
+<text x="310.0" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#93B8AC">‘네 번째 신호’ 제출</text>
+<circle cx="530.0" cy="92" r="13" fill="#5FD3A0" stroke="#5FD3A0" stroke-width="3"/>
+<path d="M525.0,92 l3.5,4 l7,-8" stroke="#11302A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="530.0" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#93B8AC">10.23</text>
+<text x="530.0" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#E6F6F0">본선 진출</text>
+<text x="530.0" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#93B8AC">15팀 선발</text>
+<circle cx="750.0" cy="92" r="13" fill="#5FD3A0" stroke="#5FD3A0" stroke-width="3"/>
+<path d="M745.0,92 l3.5,4 l7,-8" stroke="#11302A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="750.0" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#93B8AC">10.26 – 11.08</text>
+<text x="750.0" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#E6F6F0">본선</text>
+<text x="750.0" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#93B8AC">4파일 × 3트랙 제출</text>
+<circle cx="970.0" cy="92" r="13" fill="#11302A" stroke="#5FD3A0" stroke-width="3"/>
+<circle cx="970.0" cy="92" r="21" fill="none" stroke="#E0AE74" stroke-width="2" stroke-dasharray="3 4"/>
+<text x="970.0" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#93B8AC">11.09 – 11.12</text>
+<text x="970.0" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#E6F6F0">재현 검증</text>
+<text x="970.0" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#93B8AC">원본 추론 · 재학습</text>
+<circle cx="1190.0" cy="92" r="13" fill="#11302A" stroke="#5FD3A0" stroke-width="3"/>
+<text x="1190.0" y="62" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#93B8AC">11.20</text>
+<text x="1190.0" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#E6F6F0">시상</text>
+<text x="1190.0" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" fill="#93B8AC">잠정</text>
+<text x="1240" y="192" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12" fill="#93B8AC">2026 · 한국 시간 기준</text>
+</svg>
