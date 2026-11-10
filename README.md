@@ -21,7 +21,7 @@
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
 
-**[팀](#-팀)**&nbsp;&nbsp;·&nbsp;&nbsp;**[리더보드](#-본선-리더보드)**&nbsp;&nbsp;·&nbsp;&nbsp;**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**
+**[팀](#-팀)**&nbsp;&nbsp;·&nbsp;&nbsp;**[리더보드](#-본선-리더보드)**&nbsp;&nbsp;·&nbsp;&nbsp;**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[자료 내려받기](#-자료-내려받기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**&nbsp;&nbsp;·&nbsp;&nbsp;**[언론 보도](#-언론-보도)**&nbsp;&nbsp;·&nbsp;&nbsp;**[참고 문헌](#-참고-문헌과-관련-정보)**
 
 </div>
 
@@ -85,7 +85,7 @@
 
 ## 🏅 본선 리더보드
 
-본선 15팀 중 **종합 잠정 2위**이며, 10일 예측·2순 후·3순 후 **세 트랙 모두 2위**입니다. 운영진은 검증을 마친 뒤 리더보드 상위 5팀을 대상으로 발표와 시상식을 진행합니다.
+예선 394개 팀(566명) 중 본선에 오른 15팀 가운데 **종합 잠정 2위**이며, 10일 예측·2순 후·3순 후 **세 트랙 모두 2위**입니다. 운영진은 검증을 마친 뒤 리더보드 상위 5팀을 대상으로 발표와 시상식을 진행합니다.
 
 | 순위 | 팀 | 종합 MAPE | 10일 예측 | 2순 후 | 3순 후 |
 |:--:|:--|--:|--:|--:|--:|
@@ -129,6 +129,15 @@
 
 <br/>
 
+**예선에 394개 팀(566명)이 참가했고**, 외부 심사위원 3명의 서면 심사로 15개 팀이 본선에 진출했습니다. 본선 결과 상위 5팀이 발표와 시상식에 참여합니다.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/funnel-dark.svg">
+  <img alt="참가 규모: 예선 394팀·566명 → 본선 15팀 → 발표·시상 5팀 → IMPACT Lab 잠정 2위" src="assets/funnel-light.svg" width="100%">
+</picture>
+
+<br/>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
   <img alt="대회 일정: 참가 신청 09.07 → 예선 마감 10.18 → 본선 진출 10.23 → 본선 10.26–11.08 → 재현 검증 11.09–11.12 → 시상 11.20" src="assets/timeline-light.svg" width="100%">
@@ -145,6 +154,20 @@
   <source media="(prefers-color-scheme: dark)" srcset="assets/items-dark.svg">
   <img alt="예측 대상 5품목과 품목별 규칙 요약" src="assets/items-light.svg" width="100%">
 </picture>
+
+## 📥 자료 내려받기
+
+| 단계 | 자료 | 형식 | 다운로드 |
+|:--:|:--|:--:|:--:|
+| 예선 | [아이디어 예측 활용안 — "네 번째 신호"](docs/preliminary/%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EC%98%88%EC%B8%A1%ED%99%9C%EC%9A%A9%EC%95%88_AT2026-0423.pdf) | PDF | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/docs/preliminary/%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EC%98%88%EC%B8%A1%ED%99%9C%EC%9A%A9%EC%95%88_AT2026-0423.pdf) |
+| 본선 | [모델기술서 (최종 제출본)](docs/reports/%EB%AA%A8%EB%8D%B8%EA%B8%B0%EC%88%A0%EC%84%9C.pdf) | PDF | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/docs/reports/%EB%AA%A8%EB%8D%B8%EA%B8%B0%EC%88%A0%EC%84%9C.pdf) |
+| 본선 | [학습 전략보고서 (최종 제출본)](docs/reports/%ED%95%99%EC%8A%B5%EC%A0%84%EB%9E%B5%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf) | PDF | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/docs/reports/%ED%95%99%EC%8A%B5%EC%A0%84%EB%9E%B5%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf) |
+| 본선 | [발표 자료 (16장)](docs/presentation/IMPACT_Lab_%EB%B3%B8%EC%84%A0%EB%B0%9C%ED%91%9C.pptx) | PPTX | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/docs/presentation/IMPACT_Lab_%EB%B3%B8%EC%84%A0%EB%B0%9C%ED%91%9C.pptx) |
+| 본선 | [예측가격 — 10일 예측](predictions/short_10%EC%9D%BC%EC%98%88%EC%B8%A1_%EC%98%88%EC%B8%A1%EA%B0%80%EA%B2%A9.xlsx) | XLSX | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/predictions/short_10%EC%9D%BC%EC%98%88%EC%B8%A1_%EC%98%88%EC%B8%A1%EA%B0%80%EA%B2%A9.xlsx) |
+| 본선 | [예측가격 — 2순 후](predictions/long1_2%EC%88%9C%ED%9B%84_%EC%98%88%EC%B8%A1%EA%B0%80%EA%B2%A9.xlsx) | XLSX | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/predictions/long1_2%EC%88%9C%ED%9B%84_%EC%98%88%EC%B8%A1%EA%B0%80%EA%B2%A9.xlsx) |
+| 본선 | [예측가격 — 3순 후](predictions/long2_3%EC%88%9C%ED%9B%84_%EC%98%88%EC%B8%A1%EA%B0%80%EA%B2%A9.xlsx) | XLSX | [📥 내려받기](https://github.com/parkjohn10277/2026-AI-Agriculture-Price-Forecast-Hackathon/raw/main/predictions/long2_3%EC%88%9C%ED%9B%84_%EC%98%88%EC%B8%A1%EA%B0%80%EA%B2%A9.xlsx) |
+
+<sub>자료 이름을 누르면 GitHub에서 미리 보고, "내려받기"를 누르면 파일을 바로 받습니다. 예선 자료의 원래 파일명은 <code>아이디어예측활용안_AT2026-0423.pdf</code>(접수번호 AT2026-0423)입니다.</sub>
 
 ## 💡 핵심 아이디어
 
@@ -345,7 +368,7 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 ├── docs/
 │   ├── MODEL.md · VALIDATION.md · REPRODUCIBILITY.md · COMPLIANCE.md
 │   ├── reports/                #   모델기술서.pdf · 학습전략보고서.pdf (본선 최종 제출본)
-│   ├── preliminary/            #   예선 아이디어 예측 활용안
+│   ├── preliminary/            #   예선 아이디어 예측 활용안 (AT2026-0423)
 │   └── presentation/           #   본선 발표 자료
 ├── data/                       # (git 제외) 운영진 배포 데이터 배치 위치
 └── assets/                     # README 그래픽 · 대회 포스터 (scripts/dev/make_assets.py)
@@ -361,7 +384,7 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 | [docs/COMPLIANCE.md](docs/COMPLIANCE.md) | 대회 규정 항목별 준수 근거와 확인 방법 |
 | [docs/reports/모델기술서.pdf](docs/reports/모델기술서.pdf) | 본선 최종 제출 모델기술서 |
 | [docs/reports/학습전략보고서.pdf](docs/reports/학습전략보고서.pdf) | 본선 최종 제출 학습 전략보고서 |
-| [docs/preliminary/아이디어예측활용안.pdf](docs/preliminary/아이디어예측활용안.pdf) | 예선 아이디어 기술서 ("네 번째 신호") |
+| [docs/preliminary/아이디어예측활용안_AT2026-0423.pdf](docs/preliminary/아이디어예측활용안_AT2026-0423.pdf) | 예선 아이디어 기술서 ("네 번째 신호") |
 | [docs/presentation/](docs/presentation/) | 본선 발표 자료 (16장) |
 
 ## 🌾 활용과 다음 단계
@@ -377,13 +400,54 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 - **검증 해석.** 배율 산출과 평가에 같은 폴드를 썼고, 2순 무·양파와 3순 양파는 2020–2024 검증에서 block 기준선보다 낫지 않았습니다.
 - **플랫폼 재현.** 재학습 시 CPU 아키텍처가 다르면 장기 배추 예측이 1–3% 범위에서 달라질 수 있습니다.
 
+## 📰 언론 보도
+
+| 매체 | 기사 |
+|:--|:--|
+| 머니투데이 | [aT, '2026년 AI 농산물 가격예측 온라인 해커톤' 개최](https://www.mt.co.kr/policy/2026/10/23/2026102309341731178) |
+| 국제뉴스 | [AI로 농산물 가격 예측…394개 팀 해커톤 도전](https://www.gukjenews.com/news/articleView.html?idxno=3730963) |
+| 포인트데일리 | [aT, AI 농산물 가격예측 해커톤 본선 진출 15개 팀 선정](https://www.pointdaily.co.kr/news/articleView.html?idxno=323379) |
+| 투데이안 | [aT, AI 활용 농산물 가격예측 해커톤 본선 15개 팀 진출](https://www.todayan.com/news/articleView.html?idxno=634481) |
+| 충청뉴스 | [aT, 농산물 가격예측 해커톤 본선 개막](http://www.ccnnews.co.kr/news/articleView.html?idxno=416729) |
+| 월간친환경 | [[aT] 민간 AI 가격예측 모형 발굴로 농넷 기능 고도화 나선다](https://www.digitalorganic.net/news/articleView.html?idxno=48409) |
+
+<sub>기사 본문과 사진의 저작권은 각 언론사에 있어 링크로만 소개합니다.</sub>
+
+## 📖 참고 문헌과 관련 정보
+
+**방법론 참고 문헌** — 본선 모델기술서·학습전략보고서에서 인용한 문헌입니다.
+
+1. Geurts, P., Ernst, D., & Wehenkel, L. (2006). Extremely randomized trees. *Machine Learning*, 63, 3–42. [doi:10.1007/s10994-006-6226-1](https://doi.org/10.1007/s10994-006-6226-1)
+2. Friedman, J. H. (2001). Greedy function approximation: A gradient boosting machine. *The Annals of Statistics*, 29(5), 1189–1232. [doi:10.1214/aos/1013203451](https://doi.org/10.1214/aos/1013203451)
+3. Montero-Manso, P., & Hyndman, R. J. (2021). Principles and algorithms for forecasting groups of time series: Locality and globality. *International Journal of Forecasting*, 37(4), 1632–1653. [arXiv:2008.00444](https://arxiv.org/abs/2008.00444)
+4. de Myttenaere, A., Golden, B., Le Grand, B., & Rossi, F. (2016). Mean absolute percentage error for regression models. *Neurocomputing*, 192, 38–48. [arXiv:1605.02541](https://arxiv.org/abs/1605.02541)
+5. Wang, X., Hyndman, R. J., Li, F., & Kang, Y. (2023). Forecast combinations: An over 50-year review. *International Journal of Forecasting*, 39(4), 1518–1547. [doi:10.1016/j.ijforecast.2022.11.005](https://doi.org/10.1016/j.ijforecast.2022.11.005)
+6. Ben Taieb, S., & Hyndman, R. J. (2014). Boosting multi-step autoregressive forecasts. *Proceedings of the 31st ICML*, PMLR 32(1), 109–117. [PMLR](https://proceedings.mlr.press/v32/taieb14.html)
+7. Gneiting, T. (2011). Making and evaluating point forecasts. *Journal of the American Statistical Association*, 106(494), 746–762. [doi:10.1198/jasa.2011.r10138](https://doi.org/10.1198/jasa.2011.r10138)
+8. Cawley, G. C., & Talbot, N. L. C. (2010). On over-fitting in model selection and subsequent selection bias in performance evaluation. *Journal of Machine Learning Research*, 11, 2079–2107. [JMLR](https://jmlr.org/papers/v11/cawley10a.html)
+9. Hyndman, R. J., & Athanasopoulos, G. (2021). *Forecasting: Principles and Practice* (3rd ed.). OTexts. [otexts.com/fpp3](https://otexts.com/fpp3/)
+
+**팀의 관련 연구**
+
+- John Park, Maximiliano Islas Solis, Seohyun Lee, Duk-Jo Kong. *News-Derived versus Macro-Financial Signals: Explainable Forecasting of Foreign Investor Trading Direction in the Korean Semiconductor Industry.* Expert Systems with Applications 투고. [코드·데이터](https://github.com/parkjohn10277/News-Derived-versus-Macro-Financial-Signals)
+
+**관련 정보**
+
+| 이름 | 내용 |
+|:--|:--|
+| [대회 페이지](https://hackathon.imaginationgroup.co.kr/nongnet) | 2026 AI 농산물 가격예측 온라인 해커톤 안내·공지·리더보드 |
+| [농넷](https://www.nongnet.or.kr) | aT 농산물유통 종합정보시스템 (대회 결과 활용 대상) |
+| [aT 농산물유통정보](https://at.agromarket.kr) | 전국 도매시장 정산 가격·물량 (학습 자료 출처) |
+| [KAMIS](https://www.kamis.or.kr) | 농산물 유통 가격 정보 |
+| [공공데이터포털 기상청 ASOS](https://www.data.go.kr/data/15059093/openapi.do) | 일별 기상 관측 (학습 자료 출처) |
+
 ## 🙏 Acknowledgements
 
 <div align="center">
   <a href="https://impact.gist.ac.kr/main/main.php">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/impact-lab-logo-dark.svg">
-      <img alt="IMPACT Lab" src="assets/impact-lab-logo-light.svg" width="300">
+      <img alt="IMPACT Lab" src="assets/impact-lab-logo-light.svg" width="480">
     </picture>
   </a>
 </div>
@@ -392,9 +456,9 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 
 **Special thanks to IMPACT Lab.**
 
-This work was carried out at the [IMPACT Lab](https://impact.gist.ac.kr/main/main.php) led by **Prof. Duk-Jo Kong** at the Gwangju Institute of Science and Technology (GIST). We thank the members of the lab for their discussions and support throughout the project.
+This work was carried out at the [IMPACT Lab](https://impact.gist.ac.kr/main/main.php) led by **Prof. Duk-Jo Kong** at the Graduate School of AI Policy and Strategy (AIX), Gwangju Institute of Science and Technology (GIST). We thank the members of the lab for their discussions and support throughout the project.
 
-이 프로젝트는 광주과학기술원(GIST) 공득조 교수님의 [IMPACT Lab](https://impact.gist.ac.kr/main/main.php)에서 수행했습니다. 프로젝트 내내 함께 논의하고 도와주신 연구실 구성원께 감사드립니다.
+이 프로젝트는 광주과학기술원(GIST) AI정책전략대학원(AIX) 공득조 교수님의 [IMPACT Lab](https://impact.gist.ac.kr/main/main.php)에서 수행했습니다. 프로젝트 내내 함께 논의하고 도와주신 연구실 구성원께 감사드립니다.
 
 <sub>대회: 2026 AI 농산물 가격예측 온라인 해커톤 (주최 농림축산식품부 · 한국농수산식품유통공사 aT · 주관 상상력집단). 이 저장소는 참가팀의 산출물이며 주최·주관 기관의 공식 자료가 아닙니다. 대회 포스터는 주최 측 홍보 이미지이며, 대회 규정·양식·배포 데이터는 포함하지 않았습니다.</sub>
 

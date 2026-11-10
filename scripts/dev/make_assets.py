@@ -228,3 +228,38 @@ for key, c in T.items():
         open(f"{OUT}/{name}-{key}.svg", "w", encoding="utf-8").write(fn(c, key))
 print("ok")
 
+
+
+# ---------- competition funnel ----------
+FUNNEL = [("394팀 · 566명", "예선 참가", "아이디어 기술서 서면 심사"), ("15팀", "본선 진출", "외부 심사위원 3명 평가"),
+          ("5팀", "발표 · 시상", "대상 1 · 우수상 4"), ("2위", "IMPACT Lab", "잠정 순위 · 세 트랙 모두 2위")]
+
+
+def funnel(c, key):
+    W, H = 1280, 250
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="참가 규모: 394팀 566명 → 본선 15팀 → 시상 5팀 → IMPACT Lab 잠정 2위">', defs(c, key)]
+    s.append(f'<rect width="{W}" height="{H}" rx="24" fill="url(#bg{key})"/>')
+    widths = [300, 255, 215, 200]
+    x = 40
+    for i, ((big, label, sub), w) in enumerate(zip(FUNNEL, widths)):
+        last = i == len(FUNNEL) - 1
+        fill = c["straw"] if last else c["card"]
+        ink = "#FFFFFF" if last else c["ink"]
+        acc = "#FFFFFF" if last else c["accent"]
+        mut = "#FFFFFF" if last else c["muted"]
+        h = 170 - i * 14
+        y = (H - h) / 2
+        s.append(f'<g filter="url(#sh{key})"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="20" fill="{fill}" stroke="{c["stroke"]}"/></g>')
+        s.append(f'<text x="{x+w/2}" y="{y+42}" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="700" fill="{mut}">{label}</text>')
+        s.append(f'<text x="{x+w/2}" y="{y+h/2+16}" text-anchor="middle" font-family="{FONT}" font-size="{36 if len(big)<8 else 30}" font-weight="900" fill="{acc}">{big}</text>')
+        s.append(f'<text x="{x+w/2}" y="{y+h-24}" text-anchor="middle" font-family="{FONT}" font-size="13" fill="{mut}">{sub}</text>')
+        if not last:
+            ax = x + w + 12
+            s.append(f'<path d="M{ax},{H/2-12} l16,12 l-16,12" fill="none" stroke="{c["accent"]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>')
+        x += w + 44
+    s.append('</svg>')
+    return "\n".join(s)
+
+
+for key, c in T.items():
+    open(f"{OUT}/funnel-{key}.svg", "w", encoding="utf-8").write(funnel(c, key))
