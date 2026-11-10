@@ -323,14 +323,16 @@ agri-price-forecast-2026/
   <tr>
     <td align="center" width="220">
       <img src="assets/avatar-park-jun.svg" width="96" alt="박준"/><br/>
-      <b>박준</b><br/>
-      <sub>GIST AI정책전략대학원 · IMPACT Lab</sub><br/>
+      <b>박준</b> <sub>John Park</sub><br/>
+      <sub>M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br/>
+      <sub>AI for Public Safety · AI Policy</sub><br/>
       <sub><a href="https://github.com/parkjohn10277">@parkjohn10277</a></sub>
     </td>
     <td align="center" width="220">
       <img src="assets/avatar-max.svg" width="96" alt="MAX"/><br/>
-      <b>MAX</b><br/>
-      <sub>Team member</sub>
+      <b>MAX</b> <sub>Maximiliano Islas Solis</sub><br/>
+      <sub>M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br/>
+      <sub>Data Analysis &amp; ML · Econometrics</sub>
     </td>
     <td align="center" width="220">
       <img src="assets/avatar-lee-yeongyu.svg" width="96" alt="이연규"/><br/>
