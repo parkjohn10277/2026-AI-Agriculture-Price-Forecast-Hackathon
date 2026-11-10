@@ -4,7 +4,7 @@
 
 | 이름 | 소속 | GitHub |
 |:--|:--|:--|
-| MAX (Maximiliano Islas Solis) | GIST IMPACT Lab · M.S. Course | [@MaximilianoIS](https://github.com/MaximilianoIS) |
+| ⭐ Maximiliano Islas Solis (Team Leader) | GIST IMPACT Lab · M.S. Course | [@MaximilianoIS](https://github.com/MaximilianoIS) |
 | 박준 (John Park) | GIST IMPACT Lab · M.S. Course | [@parkjohn10277](https://github.com/parkjohn10277) |
 | 최연규 (Yeonkyu Choi) | GIST IMPACT Lab · M.S. Course · KARI | @dkrh2539 |
 
