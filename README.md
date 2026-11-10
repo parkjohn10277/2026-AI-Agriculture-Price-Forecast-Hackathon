@@ -16,7 +16,7 @@
 [![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C98E52?style=for-the-badge)](docs/REPRODUCIBILITY.md)
 [![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-0B4D36?style=for-the-badge)](https://hackathon.imaginationgroup.co.kr/nongnet)
 
-**본선 최종 제출 모델 · Team IMPACT Lab**<br/><sub>박준 · MAX · 최연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
+**본선 최종 제출 모델 · Team IMPACT Lab**<br/><sub>MAX · 박준 · 최연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
 
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
@@ -37,13 +37,13 @@
 
 <table>
   <tr>
-    <td align="center" valign="middle" width="33%"><img src="assets/photo-park-jun.png" width="140" alt="박준"/></td>
     <td align="center" valign="middle" width="33%"><img src="assets/photo-max.png" width="140" alt="MAX"/></td>
+    <td align="center" valign="middle" width="33%"><img src="assets/photo-park-jun.png" width="140" alt="박준"/></td>
     <td align="center" valign="middle" width="33%"><img src="assets/photo-choi-yeonkyu.png" width="140" alt="최연규"/></td>
   </tr>
   <tr>
-    <td align="center" valign="middle" width="33%"><h3>박준</h3><b>John Park</b></td>
     <td align="center" valign="middle" width="33%"><h3>MAX</h3><b>Maximiliano Islas Solis</b></td>
+    <td align="center" valign="middle" width="33%"><h3>박준</h3><b>John Park</b></td>
     <td align="center" valign="middle" width="33%"><h3>최연규</h3><b>Yeonkyu Choi</b></td>
   </tr>
   <tr>
@@ -52,13 +52,13 @@
     <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a><br/>Korea Aerospace Research Institute</td>
   </tr>
   <tr>
-    <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial Data Forecasting<br/>AI Strategy &amp; Data Analytics</td>
     <td align="center" valign="middle" width="33%">Data Analysis &amp; ML<br/>Econometrics</td>
+    <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial Data Forecasting<br/>AI Strategy &amp; Data Analytics</td>
     <td align="center" valign="middle" width="33%">Agricultural Production Analysis<br/>Earth Environment</td>
   </tr>
   <tr>
-    <td align="center" valign="middle" width="33%"><a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a></td>
     <td align="center" valign="middle" width="33%"><a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a></td>
+    <td align="center" valign="middle" width="33%"><a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a></td>
     <td align="center" valign="middle" width="33%">—</td>
   </tr>
 </table>

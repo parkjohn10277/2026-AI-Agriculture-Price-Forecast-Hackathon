@@ -4,12 +4,12 @@ title: "HarvestCast: 경계를 지키는 농산물 가격 예보 — 2026 AI 농
 type: software
 authors:
   - name: "Team IMPACT Lab"
-  - family-names: "Park"
-    given-names: "Jun"
-    affiliation: "IMPACT Lab, Gwangju Institute of Science and Technology (GIST)"
   - family-names: "Islas Solis"
     given-names: "Maximiliano"
     alias: "MAX"
+    affiliation: "IMPACT Lab, Gwangju Institute of Science and Technology (GIST)"
+  - family-names: "Park"
+    given-names: "Jun"
     affiliation: "IMPACT Lab, Gwangju Institute of Science and Technology (GIST)"
   - family-names: "Choi"
     given-names: "Yeonkyu"

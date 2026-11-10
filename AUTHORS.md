@@ -4,8 +4,8 @@
 
 | 이름 | 소속 | GitHub |
 |:--|:--|:--|
-| 박준 (John Park) | GIST IMPACT Lab · M.S. Course | [@parkjohn10277](https://github.com/parkjohn10277) |
 | MAX (Maximiliano Islas Solis) | GIST IMPACT Lab · M.S. Course | [@MaximilianoIS](https://github.com/MaximilianoIS) |
+| 박준 (John Park) | GIST IMPACT Lab · M.S. Course | [@parkjohn10277](https://github.com/parkjohn10277) |
 | 최연규 (Yeonkyu Choi) | GIST IMPACT Lab · M.S. Course · KARI | — |
 
 With thanks to [GIST IMPACT Lab](https://impact.gist.ac.kr/main/main.php) (Prof. Duk-Jo Kong).
