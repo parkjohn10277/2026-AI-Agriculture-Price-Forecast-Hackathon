@@ -37,7 +37,7 @@
 
 **Team IMPACT Lab** · 2026 AI 농산물 가격예측 온라인 해커톤 본선
 
-Team IMPACT Lab은 광주과학기술원(GIST) AI정책전략대학원(AIX) **공득조 교수님 연구실([IMPACT Lab](https://impact.gist.ac.kr/main/main.php))**의 석사과정생 세 명으로 구성된 팀입니다.<br/>
+Team IMPACT Lab은 광주과학기술원(GIST) AI정책전략대학원(AIX) <b>공득조 교수님 연구실(<a href="https://impact.gist.ac.kr/main/main.php">IMPACT Lab</a>)</b>의 석사과정생 세 명으로 구성된 팀입니다.<br/>
 반도체·금융 데이터 예측, 데이터 분석·계량경제, 농업 생산 분석이라는 서로 다른 배경을 모아 농산물 가격 예측에 도전했습니다.
 
 <br/>
