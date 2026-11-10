@@ -27,7 +27,7 @@
 ---
 
 > [!NOTE]
-> 이 저장소는 대회 검증 기간 동안 **비공개**로 유지합니다. `model/`의 코드와 `tracks/`의 설정·가중치는 본선에 제출한 `v11_zero_linux` 묶음과 **바이트 단위로 동일**하며, 운영진 배포 데이터는 재배포하지 않습니다([data/README.md](data/README.md)).
+> `model/`의 코드와 `tracks/`의 설정·가중치는 본선에 제출한 `v11_zero_linux` 묶음과 **바이트 단위로 동일**하며, 운영진 배포 데이터는 재배포하지 않습니다([data/README.md](data/README.md)).
 
 ## 📌 한눈에 보기
 
@@ -372,6 +372,6 @@ This work was carried out at the [IMPACT Lab](https://impact.gist.ac.kr/main/mai
 
 ## 📄 라이선스
 
-검증 기간 중에는 **All rights reserved**입니다. 공개 전환 시 라이선스를 정해 `LICENSE` 파일을 추가합니다. 인용은 [CITATION.cff](CITATION.cff)를 참고하세요.
+현재 별도 라이선스를 지정하지 않았으므로 **All rights reserved**입니다. 코드 재사용이 필요하면 팀에 문의해 주세요. 인용은 [CITATION.cff](CITATION.cff)를 참고하세요.
 
 <div align="center"><sub>🥬 🧅 🧄 🌶️&nbsp;&nbsp;허용된 자료만 보고, 기준일 이전만 읽고, 누구나 다시 돌릴 수 있는 가격 예보 — Team IMPACT Lab · <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub></div>
