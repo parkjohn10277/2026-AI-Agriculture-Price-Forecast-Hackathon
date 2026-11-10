@@ -263,3 +263,90 @@ def funnel(c, key):
 
 for key, c in T.items():
     open(f"{OUT}/funnel-{key}.svg", "w", encoding="utf-8").write(funnel(c, key))
+
+
+# ---------- model architecture ----------
+def architecture(c, key):
+    W, H = 1280, 618
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="HarvestCast 모델 아키텍처">', defs(c, key)]
+    s.append(f'<defs><marker id="ar{key}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="{c["accent"]}"/></marker></defs>')
+    s.append(f'<rect width="{W}" height="{H}" rx="24" fill="url(#bg{key})"/>')
+    s.append(f'<text x="40" y="52" font-family="{FONT}" font-size="24" font-weight="800" fill="{c["ink"]}">Model Architecture</text>')
+    s.append(f'<text x="296" y="52" font-family="{FONT}" font-size="15" fill="{c["muted"]}">5품목 풀링 트리 은행 + 품목·트랙별 고정 규칙 · 추론 중 학습 없음</text>')
+
+    def box(x, y, w, h, title, lines, num=None, fill=None, title_col=None, line_col=None, size=13.5):
+        fill = fill or c["card"]
+        s.append(f'<g filter="url(#sh{key})"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="16" fill="{fill}" stroke="{c["stroke"]}"/></g>')
+        tx = x + 16
+        if num:
+            s.append(f'<circle cx="{x+26}" cy="{y+26}" r="12" fill="{c["accent"]}"/><text x="{x+26}" y="{y+31}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="800" fill="{c["card"]}">{num}</text>')
+            tx = x + 46
+        s.append(f'<text x="{tx}" y="{y+31}" font-family="{FONT}" font-size="16" font-weight="800" fill="{title_col or c["ink"]}">{html.escape(title)}</text>')
+        for i, ln in enumerate(lines):
+            bold = ln.startswith("**")
+            t = ln.strip("*")
+            s.append(f'<text x="{x+16}" y="{y+58+i*21}" font-family="{FONT}" font-size="{size}" font-weight="{700 if bold else 400}" fill="{line_col or (c["accent"] if bold else c["muted"])}">{html.escape(t)}</text>')
+
+    def arrow(x1, y1, x2, y2):
+        s.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{c["accent"]}" stroke-width="2.5" marker-end="url(#ar{key})"/>')
+
+    top = 84
+    # column 1: data
+    box(40, top, 230, 256, "공식 자료 7종", ["aT 일별 경락가격 (목표)", "도매시장 정산물량", "농협 산지공판장", "가락시장 정산", "전국 도매시장 정산", "기상청 ASOS 관측", "법정 공휴일 달력", "", "**외부 데이터 · 예보 없음**"], num="1")
+    # column 2: boundary
+    box(40, top + 276, 230, 196, "기준일 경계", ["**학습 2020-01-02 ~ 2024-12-31**", "train.py 최대 날짜 assert", "**추론 by_case/C01–C12**", "관측일 < 기준일 D 행만", "모든 창은 D−1에서 끝남"], num="2")
+    # column 3: features
+    box(310, top, 250, 472, "특성 생성", [], num="3")
+    groups = [("가격 상태", "L · EWMA e20/e50 · 수익률\n모멘텀 · vol30/90 · 계절 seas"),
+              ("수급", "정산물량 7/30/365일 비율\n산지·가락·전국 정산단가"),
+              ("기상", "14·30일 기온·강수 이상\n서리·폭염·호우 · 산지 권역"),
+              ("교차 품목 · 달력", "배추·무·양파 스프레드\n요일 · 연중 일자 · 거리 h")]
+    for i, (g, d) in enumerate(groups):
+        gy = top + 50 + i * 100
+        s.append(f'<rect x="326" y="{gy}" width="218" height="86" rx="12" fill="{c["chip"]}" stroke="{c["stroke"]}"/>')
+        s.append(f'<text x="342" y="{gy+26}" font-family="{FONT}" font-size="14.5" font-weight="800" fill="{c["accent"]}">{g}</text>')
+        for j, ln in enumerate(d.split("\n")):
+            s.append(f'<text x="342" y="{gy+50+j*19}" font-family="{FONT}" font-size="12.5" fill="{c["ink"]}">{html.escape(ln)}</text>')
+    s.append(f'<text x="435" y="{top+462}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="700" fill="{c["muted"]}">은행별 54–83개 특성</text>')
+    # column 4: banks
+    box(600, top, 270, 224, "ExtraTrees 은행", ["et · et_mf3 (max_features 0.5/0.3)", "et_hg_x3 · et_hg_e20_x3 (거리 1–3/4–6/7–10)", "b1_coint (공적분형 교차 품목)", "et_mf3_e20_wx (산지 기상)", "et_clip (목표 클립)", "", "**random_state 0 · 중앙값 imputer**"], num="4", size=12.5)
+    box(600, top + 244, 270, 140, "HistGradientBoosting", ["pooled_mw", "absolute_error · lr 0.03 · 15 leaves", "sample_weight = L / Y (MAPE형)"], size=12.5)
+    s.append(f'<rect x="600" y="{top+404}" width="270" height="68" rx="14" fill="{c["chip"]}" stroke="{c["stroke"]}"/>')
+    s.append(f'<text x="616" y="{top+430}" font-family="{FONT}" font-size="13.5" font-weight="800" fill="{c["accent"]}">목표 y = log(Y / L) − EWMA</text>')
+    s.append(f'<text x="616" y="{top+454}" font-family="{FONT}" font-size="12.5" fill="{c["ink"]}">은행 A ≤ 2024-12-30 · B ≤ 2024-12-31</text>')
+    # column 5: rules
+    box(910, top, 330, 300, "품목·트랙별 고정 규칙", [], num="5")
+    steps = [("로그 공간 혼합", "A|B 동일 가중 · 무 10일 6항"), ("배율 shrink", "2022–2024 잔차 exp(−var)·exp(−mean)"),
+             ("감쇠 · 앵커", "λ · vol30² · h/10 · w_max · h/10"), ("명절 배율", "설날·추석 휴장 경계 기준")]
+    for i, (t, d) in enumerate(steps):
+        sy = top + 48 + i * 62
+        s.append(f'<rect x="926" y="{sy}" width="298" height="52" rx="10" fill="{c["chip"]}" stroke="{c["stroke"]}"/>')
+        s.append(f'<text x="942" y="{sy+22}" font-family="{FONT}" font-size="14" font-weight="800" fill="{c["accent"]}">{i+1}. {t}</text>')
+        s.append(f'<text x="942" y="{sy+42}" font-family="{FONT}" font-size="12.5" fill="{c["ink"]}">{html.escape(d)}</text>')
+        if i < 3:
+            s.append(f'<line x1="1075" y1="{sy+52}" x2="1075" y2="{sy+62}" stroke="{c["accent"]}" stroke-width="2"/>')
+    # column 6: output
+    s.append(f'<g filter="url(#sh{key})"><rect x="910" y="{top+320}" width="330" height="152" rx="16" fill="{c["straw"]}"/></g>')
+    s.append(f'<circle cx="936" cy="{top+346}" r="12" fill="#FFFFFF"/><text x="936" y="{top+351}" text-anchor="middle" font-family="{FONT}" font-size="13" font-weight="800" fill="{c["straw"]}">6</text>')
+    s.append(f'<text x="956" y="{top+351}" font-family="{FONT}" font-size="16" font-weight="800" fill="#FFFFFF">예측 출력 · 가격 = L × exp(ŷ)</text>')
+    outs = [("10일 예측", "D+1 ~ D+10 일별 × 5품목", "9.12%"), ("2순 후", "순 평균가격 × 5품목", "11.46%"), ("3순 후", "순 평균가격 × 5품목", "10.84%")]
+    for i, (t, d, m) in enumerate(outs):
+        oy = top + 380 + i * 30
+        s.append(f'<text x="930" y="{oy}" font-family="{FONT}" font-size="14" font-weight="800" fill="#FFFFFF">{t}</text>')
+        s.append(f'<text x="1010" y="{oy}" font-family="{FONT}" font-size="12.5" fill="#FFFFFF" fill-opacity="0.92">{d}</text>')
+        s.append(f'<text x="1222" y="{oy}" text-anchor="end" font-family="{MONO}" font-size="13" font-weight="800" fill="#FFFFFF">{m}</text>')
+    # arrows
+    arrow(270, top + 128, 306, top + 128)
+    arrow(270, top + 374, 306, top + 374)
+    arrow(560, top + 112, 596, top + 112)
+    arrow(560, top + 316, 596, top + 316)
+    arrow(870, top + 112, 906, top + 112)
+    arrow(870, top + 316, 906, top + 230)
+    arrow(1075, top + 300, 1075, top + 316)
+    s.append(f'<text x="640" y="{H-22}" text-anchor="middle" font-family="{FONT}" font-size="12.5" fill="{c["muted"]}">깐마늘 · 건고추는 세 트랙 모두 마지막 가격 유지(last) · 모든 계수는 tracks/*/config.json에 고정 · MAPE는 본선 리더보드 기록</text>')
+    s.append('</svg>')
+    return "\n".join(s)
+
+
+for key, c in T.items():
+    open(f"{OUT}/architecture-{key}.svg", "w", encoding="utf-8").write(architecture(c, key))

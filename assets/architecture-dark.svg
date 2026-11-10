@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="618" viewBox="0 0 1280 618" role="img" aria-label="HarvestCast 모델 아키텍처">
+<defs><linearGradient id="bgdark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A221E"/><stop offset="1" stop-color="#0F3A33"/></linearGradient><linearGradient id="ttdark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3B8"/><stop offset="1" stop-color="#3FBF8A"/></linearGradient><linearGradient id="gldark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12332D" stop-opacity="0.95"/><stop offset="1" stop-color="#12332D" stop-opacity="0.55"/></linearGradient><filter id="shdark" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.14"/></filter></defs>
+<defs><marker id="ardark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5FD3A0"/></marker></defs>
+<rect width="1280" height="618" rx="24" fill="url(#bgdark)"/>
+<text x="40" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="24" font-weight="800" fill="#E6F6F0">Model Architecture</text>
+<text x="296" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" fill="#93B8AC">5품목 풀링 트리 은행 + 품목·트랙별 고정 규칙 · 추론 중 학습 없음</text>
+<g filter="url(#shdark)"><rect x="40" y="84" width="230" height="256" rx="16" fill="#11302A" stroke="#2E6A5C"/></g>
+<circle cx="66" cy="110" r="12" fill="#5FD3A0"/><text x="66" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#11302A">1</text>
+<text x="86" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#E6F6F0">공식 자료 7종</text>
+<text x="56" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">aT 일별 경락가격 (목표)</text>
+<text x="56" y="163" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">도매시장 정산물량</text>
+<text x="56" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">농협 산지공판장</text>
+<text x="56" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">가락시장 정산</text>
+<text x="56" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">전국 도매시장 정산</text>
+<text x="56" y="247" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">기상청 ASOS 관측</text>
+<text x="56" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">법정 공휴일 달력</text>
+<text x="56" y="289" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC"></text>
+<text x="56" y="310" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="700" fill="#5FD3A0">외부 데이터 · 예보 없음</text>
+<g filter="url(#shdark)"><rect x="40" y="360" width="230" height="196" rx="16" fill="#11302A" stroke="#2E6A5C"/></g>
+<circle cx="66" cy="386" r="12" fill="#5FD3A0"/><text x="66" y="391" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#11302A">2</text>
+<text x="86" y="391" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#E6F6F0">기준일 경계</text>
+<text x="56" y="418" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="700" fill="#5FD3A0">학습 2020-01-02 ~ 2024-12-31</text>
+<text x="56" y="439" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">train.py 최대 날짜 assert</text>
+<text x="56" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="700" fill="#5FD3A0">추론 by_case/C01–C12</text>
+<text x="56" y="481" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">관측일 &lt; 기준일 D 행만</text>
+<text x="56" y="502" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="400" fill="#93B8AC">모든 창은 D−1에서 끝남</text>
+<g filter="url(#shdark)"><rect x="310" y="84" width="250" height="472" rx="16" fill="#11302A" stroke="#2E6A5C"/></g>
+<circle cx="336" cy="110" r="12" fill="#5FD3A0"/><text x="336" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#11302A">3</text>
+<text x="356" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#E6F6F0">특성 생성</text>
+<rect x="326" y="134" width="218" height="86" rx="12" fill="#173F37" stroke="#2E6A5C"/>
+<text x="342" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#5FD3A0">가격 상태</text>
+<text x="342" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">L · EWMA e20/e50 · 수익률</text>
+<text x="342" y="203" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">모멘텀 · vol30/90 · 계절 seas</text>
+<rect x="326" y="234" width="218" height="86" rx="12" fill="#173F37" stroke="#2E6A5C"/>
+<text x="342" y="260" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#5FD3A0">수급</text>
+<text x="342" y="284" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">정산물량 7/30/365일 비율</text>
+<text x="342" y="303" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">산지·가락·전국 정산단가</text>
+<rect x="326" y="334" width="218" height="86" rx="12" fill="#173F37" stroke="#2E6A5C"/>
+<text x="342" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#5FD3A0">기상</text>
+<text x="342" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">14·30일 기온·강수 이상</text>
+<text x="342" y="403" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">서리·폭염·호우 · 산지 권역</text>
+<rect x="326" y="434" width="218" height="86" rx="12" fill="#173F37" stroke="#2E6A5C"/>
+<text x="342" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#5FD3A0">교차 품목 · 달력</text>
+<text x="342" y="484" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">배추·무·양파 스프레드</text>
+<text x="342" y="503" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">요일 · 연중 일자 · 거리 h</text>
+<text x="435" y="546" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#93B8AC">은행별 54–83개 특성</text>
+<g filter="url(#shdark)"><rect x="600" y="84" width="270" height="224" rx="16" fill="#11302A" stroke="#2E6A5C"/></g>
+<circle cx="626" cy="110" r="12" fill="#5FD3A0"/><text x="626" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#11302A">4</text>
+<text x="646" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#E6F6F0">ExtraTrees 은행</text>
+<text x="616" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">et · et_mf3 (max_features 0.5/0.3)</text>
+<text x="616" y="163" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">et_hg_x3 · et_hg_e20_x3 (거리 1–3/4–6/7–10)</text>
+<text x="616" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">b1_coint (공적분형 교차 품목)</text>
+<text x="616" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">et_mf3_e20_wx (산지 기상)</text>
+<text x="616" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">et_clip (목표 클립)</text>
+<text x="616" y="247" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC"></text>
+<text x="616" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#5FD3A0">random_state 0 · 중앙값 imputer</text>
+<g filter="url(#shdark)"><rect x="600" y="328" width="270" height="140" rx="16" fill="#11302A" stroke="#2E6A5C"/></g>
+<text x="616" y="359" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#E6F6F0">HistGradientBoosting</text>
+<text x="616" y="386" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">pooled_mw</text>
+<text x="616" y="407" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">absolute_error · lr 0.03 · 15 leaves</text>
+<text x="616" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" font-weight="400" fill="#93B8AC">sample_weight = L / Y (MAPE형)</text>
+<rect x="600" y="488" width="270" height="68" rx="14" fill="#173F37" stroke="#2E6A5C"/>
+<text x="616" y="514" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13.5" font-weight="800" fill="#5FD3A0">목표 y = log(Y / L) − EWMA</text>
+<text x="616" y="538" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">은행 A ≤ 2024-12-30 · B ≤ 2024-12-31</text>
+<g filter="url(#shdark)"><rect x="910" y="84" width="330" height="300" rx="16" fill="#11302A" stroke="#2E6A5C"/></g>
+<circle cx="936" cy="110" r="12" fill="#5FD3A0"/><text x="936" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#11302A">5</text>
+<text x="956" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#E6F6F0">품목·트랙별 고정 규칙</text>
+<rect x="926" y="132" width="298" height="52" rx="10" fill="#173F37" stroke="#2E6A5C"/>
+<text x="942" y="154" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#5FD3A0">1. 로그 공간 혼합</text>
+<text x="942" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">A|B 동일 가중 · 무 10일 6항</text>
+<line x1="1075" y1="184" x2="1075" y2="194" stroke="#5FD3A0" stroke-width="2"/>
+<rect x="926" y="194" width="298" height="52" rx="10" fill="#173F37" stroke="#2E6A5C"/>
+<text x="942" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#5FD3A0">2. 배율 shrink</text>
+<text x="942" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">2022–2024 잔차 exp(−var)·exp(−mean)</text>
+<line x1="1075" y1="246" x2="1075" y2="256" stroke="#5FD3A0" stroke-width="2"/>
+<rect x="926" y="256" width="298" height="52" rx="10" fill="#173F37" stroke="#2E6A5C"/>
+<text x="942" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#5FD3A0">3. 감쇠 · 앵커</text>
+<text x="942" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">λ · vol30² · h/10 · w_max · h/10</text>
+<line x1="1075" y1="308" x2="1075" y2="318" stroke="#5FD3A0" stroke-width="2"/>
+<rect x="926" y="318" width="298" height="52" rx="10" fill="#173F37" stroke="#2E6A5C"/>
+<text x="942" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#5FD3A0">4. 명절 배율</text>
+<text x="942" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#E6F6F0">설날·추석 휴장 경계 기준</text>
+<g filter="url(#shdark)"><rect x="910" y="404" width="330" height="152" rx="16" fill="#E0AE74"/></g>
+<circle cx="936" cy="430" r="12" fill="#FFFFFF"/><text x="936" y="435" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#E0AE74">6</text>
+<text x="956" y="435" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">예측 출력 · 가격 = L × exp(ŷ)</text>
+<text x="930" y="464" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">10일 예측</text>
+<text x="1010" y="464" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#FFFFFF" fill-opacity="0.92">D+1 ~ D+10 일별 × 5품목</text>
+<text x="1222" y="464" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#FFFFFF">9.12%</text>
+<text x="930" y="494" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">2순 후</text>
+<text x="1010" y="494" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#FFFFFF" fill-opacity="0.92">순 평균가격 × 5품목</text>
+<text x="1222" y="494" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#FFFFFF">11.46%</text>
+<text x="930" y="524" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">3순 후</text>
+<text x="1010" y="524" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#FFFFFF" fill-opacity="0.92">순 평균가격 × 5품목</text>
+<text x="1222" y="524" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#FFFFFF">10.84%</text>
+<line x1="270" y1="212" x2="306" y2="212" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<line x1="270" y1="458" x2="306" y2="458" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<line x1="560" y1="196" x2="596" y2="196" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<line x1="560" y1="400" x2="596" y2="400" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<line x1="870" y1="196" x2="906" y2="196" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<line x1="870" y1="400" x2="906" y2="314" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<line x1="1075" y1="384" x2="1075" y2="400" stroke="#5FD3A0" stroke-width="2.5" marker-end="url(#ardark)"/>
+<text x="640" y="596" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="12.5" fill="#93B8AC">깐마늘 · 건고추는 세 트랙 모두 마지막 가격 유지(last) · 모든 계수는 tracks/*/config.json에 고정 · MAPE는 본선 리더보드 기록</text>
+</svg>

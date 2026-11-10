@@ -243,16 +243,12 @@ flowchart LR
 
 ## 🌲 모델
 
-**구조.** 5품목 풀링 트리 은행 위에 품목·트랙별 고정 규칙을 얹은 2단 구조입니다.
+**구조.** 5품목 풀링 트리 은행 위에 품목·트랙별 고정 규칙을 얹은 2단 구조입니다. 공식 자료를 기준일 이전으로 잘라 특성을 만들고(①–③), 2020–2024로 학습한 ExtraTrees·HistGradientBoosting 은행이 로그 변화율을 예측하면(④), 고정 규칙이 혼합·보정해 최종 가격을 냅니다(⑤–⑥).
 
-```mermaid
-flowchart TB
-    F["특성 54~89개<br/>가격 상태 · 수급 · 기상 · 교차 품목 · 달력"] --> ET["ExtraTrees 변형<br/>et · et_mf3 · et_hg_x3 · et_mf3_e20_wx · et_clip · b1_coint"]
-    F --> HGB["HistGradientBoosting<br/>pooled_mw (L/Y 가중 절대오차)"]
-    ET --> R["품목·트랙별 규칙 (config.json)<br/>로그 공간 혼합 → 배율 → 변동성 감쇠·앵커 → 명절 배율"]
-    HGB --> R
-    R --> OUT["가격 = L × exp(예측 로그 변화)"]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <img alt="HarvestCast 모델 아키텍처: 공식 자료 7종 → 기준일 경계 → 특성 생성 → ExtraTrees·HGB 은행 → 품목·트랙별 고정 규칙 → 10일·2순·3순 예측" src="assets/architecture-light.svg" width="100%">
+</picture>
 
 <details>
 <summary><b>특성 네 갈래</b> (클릭해서 펼치기)</summary>
