@@ -13,12 +13,12 @@
 [![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C98E52?style=for-the-badge)](docs/REPRODUCIBILITY.md)
 [![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-0B4D36?style=for-the-badge)](https://hackathon.imaginationgroup.co.kr/nongnet)
 
-**2026 AI 농산물 가격예측 온라인 해커톤 본선 · IMPACT Lab (GIST AI정책전략대학원)**
+**2026 AI 농산물 가격예측 온라인 해커톤 본선 · Team IMPACT Lab**<br/><sub>박준 · MAX · 이연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
 
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
 
-**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**
+**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**&nbsp;&nbsp;·&nbsp;&nbsp;**[팀](#-팀)**
 
 </div>
 
@@ -313,7 +313,53 @@ agri-price-forecast-2026/
 
 ## 👥 팀
 
-**IMPACT Lab** · GIST AI정책전략대학원 — 박준
+<div align="center">
+
+**Team IMPACT Lab** · 2026 AI 농산물 가격예측 온라인 해커톤 본선
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center" width="220">
+      <img src="assets/avatar-park-jun.svg" width="96" alt="박준"/><br/>
+      <b>박준</b><br/>
+      <sub>GIST AI정책전략대학원 · IMPACT Lab</sub><br/>
+      <sub><a href="https://github.com/parkjohn10277">@parkjohn10277</a></sub>
+    </td>
+    <td align="center" width="220">
+      <img src="assets/avatar-max.svg" width="96" alt="MAX"/><br/>
+      <b>MAX</b><br/>
+      <sub>Team member</sub>
+    </td>
+    <td align="center" width="220">
+      <img src="assets/avatar-lee-yeongyu.svg" width="96" alt="이연규"/><br/>
+      <b>이연규</b><br/>
+      <sub>Team member</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+## 🙏 Acknowledgements
+
+<div align="center">
+  <a href="https://impact.gist.ac.kr/main/main.php">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/impact-lab-logo-dark.svg">
+      <img alt="IMPACT Lab" src="assets/impact-lab-logo-light.svg" width="300">
+    </picture>
+  </a>
+</div>
+
+<br/>
+
+**Special thanks to IMPACT Lab.**
+
+This work was carried out at the [IMPACT Lab](https://impact.gist.ac.kr/main/main.php) led by **Prof. Duk-Jo Kong** at the Gwangju Institute of Science and Technology (GIST). We thank the members of the lab for their discussions and support throughout the project.
+
+이 프로젝트는 광주과학기술원(GIST) 공득조 교수님의 [IMPACT Lab](https://impact.gist.ac.kr/main/main.php)에서 수행했습니다. 프로젝트 내내 함께 논의하고 도와주신 연구실 구성원께 감사드립니다.
 
 <sub>대회: 2026 AI 농산물 가격예측 온라인 해커톤 (주최 농림축산식품부 · 한국농수산식품유통공사 aT · 주관 상상력집단). 이 저장소는 참가팀의 산출물이며 주최·주관 기관의 공식 자료가 아닙니다. 대회 포스터는 주최 측 홍보 이미지이며, 대회 규정·양식·배포 데이터는 포함하지 않았습니다.</sub>
 
@@ -321,4 +367,4 @@ agri-price-forecast-2026/
 
 검증 기간 중에는 **All rights reserved**입니다. 공개 전환 시 라이선스를 정해 `LICENSE` 파일을 추가합니다. 인용은 [CITATION.cff](CITATION.cff)를 참고하세요.
 
-<div align="center"><sub>🥬 🧅 🧄 🌶️&nbsp;&nbsp;허용된 자료만 보고, 기준일 이전만 읽고, 누구나 다시 돌릴 수 있는 가격 예보 — IMPACT Lab</sub></div>
+<div align="center"><sub>🥬 🧅 🧄 🌶️&nbsp;&nbsp;허용된 자료만 보고, 기준일 이전만 읽고, 누구나 다시 돌릴 수 있는 가격 예보 — Team IMPACT Lab · <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub></div>
