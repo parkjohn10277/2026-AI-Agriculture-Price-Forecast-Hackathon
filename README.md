@@ -59,7 +59,7 @@
   <tr>
     <td align="center" valign="middle" width="33%"><a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a></td>
     <td align="center" valign="middle" width="33%"><a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a></td>
-    <td align="center" valign="middle" width="33%">—</td>
+    <td align="center" valign="middle" width="33%"><b>@dkrh2539</b></td>
   </tr>
 </table>
 
