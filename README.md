@@ -1,5 +1,9 @@
 <div align="center">
 
+<a href="https://hackathon.imaginationgroup.co.kr/nongnet"><img alt="2026 AI 농산물 가격예측 온라인 해커톤 포스터" src="assets/competition-poster.jpg" width="100%"></a>
+
+<br/>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <img alt="HarvestCast — 경계를 지키는 농산물 가격 예보" src="assets/banner-light.svg" width="100%">
