@@ -14,7 +14,7 @@ authors:
   - family-names: "Choi"
     given-names: "Yeonkyu"
     affiliation: "IMPACT Lab, Gwangju Institute of Science and Technology (GIST); Korea Aerospace Research Institute (KARI)"
-repository-code: "https://github.com/parkjohn10277/HarvestCast"
+repository-code: "https://github.com/parkjohn10277/2026-AI-Agri-Price-Forecast-Hackathon"
 version: "v11-zero-linux"
 date-released: "2026-11-08"
 keywords:

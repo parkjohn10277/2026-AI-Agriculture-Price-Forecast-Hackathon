@@ -243,8 +243,8 @@ flowchart TB
 **요구 사항** — CPython 3.14.8(일반 GIL 빌드) 권장, CPU만, 메모리 2GB 이상, 네트워크 불필요(패키지 설치 후).
 
 ```bash
-git clone https://github.com/parkjohn10277/HarvestCast.git
-cd HarvestCast
+git clone https://github.com/parkjohn10277/2026-AI-Agri-Price-Forecast-Hackathon.git
+cd 2026-AI-Agri-Price-Forecast-Hackathon
 python -m pip install -r model/requirements.txt
 
 # 대회 제출 묶음(v11_zero_linux 폴더 또는 .zip)에서 데이터 배치 → data/ (git 제외)
@@ -278,7 +278,7 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 ## 🗂 저장소 구조
 
 ```text
-HarvestCast/
+2026-AI-Agri-Price-Forecast-Hackathon/
 ├── model/                      # 제출 코드 (v11_zero_linux 10일 패키지와 동일, 수정 없음)
 │   ├── train.py                #   2020–2024 은행 학습 (은행 A/B)
 │   ├── predict.py              #   기준일별 추론 + 고정 규칙 + 명절 보정
@@ -344,7 +344,7 @@ HarvestCast/
       <img src="assets/photo-park-jun.png" width="120" alt="박준"/><br/>
       <b>박준</b> <sub>John Park</sub><br/>
       <sub>M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br/>
-      <sub>AI for Public Safety · AI Policy</sub><br/>
+      <sub>반도체·금융 데이터 예측 연구 · AI 전략·데이터 분석</sub><br/>
       <sub><a href="https://github.com/parkjohn10277">@parkjohn10277</a></sub>
     </td>
     <td align="center" valign="top" width="240">
