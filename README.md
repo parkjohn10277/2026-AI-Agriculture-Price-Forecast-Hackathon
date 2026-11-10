@@ -5,9 +5,9 @@
   <img alt="HarvestCast — 경계를 지키는 농산물 가격 예보" src="assets/banner-light.svg" width="100%">
 </picture>
 
-<h1>🌾 HarvestCast</h1>
+<h1>🌾 2026 AI 농산물 가격예측 온라인 해커톤</h1>
 
-<p><b>Harvest + Forecast</b> — 허용된 과거만 보고, 기준일 이전만 읽는 농산물 가격 예보</p>
+<p><b>HarvestCast</b> (Harvest + Forecast) — 허용된 과거만 보고, 기준일 이전만 읽는 농산물 가격 예보</p>
 
 [![Python](https://img.shields.io/badge/CPython-3.14.8-12805A?style=for-the-badge&logo=python&logoColor=white)](model/requirements.txt)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-12805A?style=for-the-badge&logo=scikitlearn&logoColor=white)](model/requirements.txt)
@@ -15,7 +15,7 @@
 [![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C98E52?style=for-the-badge)](docs/REPRODUCIBILITY.md)
 [![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-0B4D36?style=for-the-badge)](https://hackathon.imaginationgroup.co.kr/nongnet)
 
-**2026 AI 농산물 가격예측 온라인 해커톤 본선 · Team IMPACT Lab**<br/><sub>박준 · MAX · 최연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
+**본선 최종 제출 모델 · Team IMPACT Lab**<br/><sub>박준 · MAX · 최연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
 
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
