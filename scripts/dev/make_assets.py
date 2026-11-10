@@ -222,7 +222,7 @@ print("ok")
 
 
 # ---------- team avatars ----------
-MEMBERS = [("park-jun", "박", "#12805A", "#5FD3A0"), ("max", "M", "#0E5B52", "#C98E52"), ("lee-yeongyu", "이", "#C98E52", "#12805A")]
+MEMBERS = [("park-jun", "박", "#12805A", "#5FD3A0"), ("max", "M", "#0E5B52", "#C98E52"), ("choi-yeonkyu", "최", "#C98E52", "#12805A")]
 
 
 def avatar(initial, a, b, slug):

@@ -13,7 +13,7 @@
 [![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C98E52?style=for-the-badge)](docs/REPRODUCIBILITY.md)
 [![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-0B4D36?style=for-the-badge)](https://hackathon.imaginationgroup.co.kr/nongnet)
 
-**2026 AI 농산물 가격예측 온라인 해커톤 본선 · Team IMPACT Lab**<br/><sub>박준 · MAX · 이연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
+**2026 AI 농산물 가격예측 온라인 해커톤 본선 · Team IMPACT Lab**<br/><sub>박준 · MAX · 최연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
 
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
@@ -335,9 +335,11 @@ agri-price-forecast-2026/
       <sub>Data Analysis &amp; ML · Econometrics</sub>
     </td>
     <td align="center" width="220">
-      <img src="assets/avatar-lee-yeongyu.svg" width="96" alt="이연규"/><br/>
-      <b>이연규</b><br/>
-      <sub>Team member</sub>
+      <img src="assets/avatar-choi-yeonkyu.svg" width="96" alt="최연규"/><br/>
+      <b>최연규</b> <sub>Yeonkyu Choi</sub><br/>
+      <sub>M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br/>
+      <sub>Agricultural Production Analysis · Earth Environment</sub><br/>
+      <sub>Korea Aerospace Research Institute (KARI)</sub>
     </td>
   </tr>
 </table>
