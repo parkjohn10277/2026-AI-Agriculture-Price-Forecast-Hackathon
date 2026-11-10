@@ -68,7 +68,7 @@ def defs(c, key):
 # ---------- hero banner ----------
 def banner(c, key):
     W, H = 1280, 500
-    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="IMPACT Lab — 경계를 지키는 농산물 가격 예보">', defs(c, key)]
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="HarvestCast — 경계를 지키는 농산물 가격 예보">', defs(c, key)]
     s.append(f'<clipPath id="cl{key}"><rect width="{W}" height="{H}" rx="28"/></clipPath><g clip-path="url(#cl{key})">')
     s.append(f'<rect width="{W}" height="{H}" fill="url(#bg{key})"/>')
     # teal waves (poster-like)
@@ -103,8 +103,10 @@ def banner(c, key):
     for (name, fn), (x, y, sc, rot) in zip(ICONS, pos):
         s.append(f'<g transform="translate({x},{y}) rotate({rot}) scale({sc})" filter="url(#sh{key})">{fn(c)}</g>')
     # left text
-    s.append(f'<rect x="60" y="54" width="300" height="32" rx="16" fill="{c["chip"]}" stroke="{c["stroke"]}"/>')
-    s.append(f'<text x="80" y="76" font-family="{FONT}" font-size="15" font-weight="700" fill="{c["accent"]}">IMPACT Lab · 본선 최종 제출 모델</text>')
+    s.append(f'<rect x="60" y="50" width="392" height="36" rx="18" fill="{c["chip"]}" stroke="{c["stroke"]}"/>')
+    s.append(f'<circle cx="82" cy="68" r="7" fill="{c["accent"]}"/><path d="M78,68 l3,3 l5,-6" stroke="{c["chip"]}" stroke-width="2" fill="none" stroke-linecap="round"/>')
+    s.append(f'<text x="98" y="74" font-family="{FONT}" font-size="16" font-weight="900" letter-spacing="0.5" fill="{c["accent"]}">HarvestCast</text>')
+    s.append(f'<text x="210" y="74" font-family="{FONT}" font-size="14" font-weight="600" fill="{c["muted"]}">Team IMPACT Lab · 본선 최종 모델</text>')
     s.append(f'<text x="62" y="128" font-family="{FONT}" font-size="22" font-weight="700" fill="{c["ink"]}">2026 AI 농산물 가격예측 온라인 해커톤</text>')
     for txt, y in (("경계를 지키는", 196), ("농산물 가격 예보", 262)):
         s.append(f'<text x="64" y="{y+4}" font-family="{FONT}" font-size="58" font-weight="900" fill="{c["shadow"]}" opacity="0.18">{txt}</text>')

@@ -2,10 +2,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="IMPACT Lab — 경계를 지키는 농산물 가격 예보" src="assets/banner-light.svg" width="100%">
+  <img alt="HarvestCast — 경계를 지키는 농산물 가격 예보" src="assets/banner-light.svg" width="100%">
 </picture>
 
-<br/>
+<h1>🌾 HarvestCast</h1>
+
+<p><b>Harvest + Forecast</b> — 허용된 과거만 보고, 기준일 이전만 읽는 농산물 가격 예보</p>
 
 [![Python](https://img.shields.io/badge/CPython-3.14.8-12805A?style=for-the-badge&logo=python&logoColor=white)](model/requirements.txt)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-12805A?style=for-the-badge&logo=scikitlearn&logoColor=white)](model/requirements.txt)
@@ -224,8 +226,8 @@ flowchart TB
 **요구 사항** — CPython 3.14.8(일반 GIL 빌드) 권장, CPU만, 메모리 2GB 이상, 네트워크 불필요(패키지 설치 후).
 
 ```bash
-git clone https://github.com/parkjohn10277/agri-price-forecast-2026.git
-cd agri-price-forecast-2026
+git clone https://github.com/parkjohn10277/HarvestCast.git
+cd HarvestCast
 python -m pip install -r model/requirements.txt
 
 # 대회 제출 묶음(v11_zero_linux 폴더 또는 .zip)에서 데이터 배치 → data/ (git 제외)
@@ -259,7 +261,7 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 ## 🗂 저장소 구조
 
 ```text
-agri-price-forecast-2026/
+HarvestCast/
 ├── model/                      # 제출 코드 (v11_zero_linux 10일 패키지와 동일, 수정 없음)
 │   ├── train.py                #   2020–2024 은행 학습 (은행 A/B)
 │   ├── predict.py              #   기준일별 추론 + 고정 규칙 + 명절 보정
@@ -332,7 +334,8 @@ agri-price-forecast-2026/
       <img src="assets/photo-max.png" width="120" alt="MAX"/><br/>
       <b>MAX</b> <sub>Maximiliano Islas Solis</sub><br/>
       <sub>M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br/>
-      <sub>Data Analysis &amp; ML · Econometrics</sub>
+      <sub>Data Analysis &amp; ML · Econometrics</sub><br/>
+      <sub><a href="https://github.com/MaximilianoIS">@MaximilianoIS</a></sub>
     </td>
     <td align="center" valign="top" width="240">
       <img src="assets/photo-choi-yeonkyu.png" width="120" alt="최연규"/><br/>
