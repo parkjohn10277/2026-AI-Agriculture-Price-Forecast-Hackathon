@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""README graphics in the competition poster palette (mint / deep green / teal / straw)."""
+"""README graphics in the competition poster palette (mint / deep green / teal / straw).
+Team photos (assets/photo-*.png) come from the IMPACT Lab homepage and are not generated here."""
 import math, sys, html
 OUT = sys.argv[1]
 
@@ -220,18 +221,3 @@ for key, c in T.items():
         open(f"{OUT}/{name}-{key}.svg", "w", encoding="utf-8").write(fn(c, key))
 print("ok")
 
-
-# ---------- team avatars ----------
-MEMBERS = [("park-jun", "박", "#12805A", "#5FD3A0"), ("max", "M", "#0E5B52", "#C98E52"), ("choi-yeonkyu", "최", "#C98E52", "#12805A")]
-
-
-def avatar(initial, a, b, slug):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="{initial}">'
-            f'<defs><linearGradient id="g{slug}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a}"/><stop offset="1" stop-color="{b}"/></linearGradient></defs>'
-            f'<circle cx="80" cy="80" r="76" fill="url(#g{slug})"/><circle cx="80" cy="80" r="76" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="4"/>'
-            f'<path d="M24,110 C60,92 100,128 136,104" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="10" fill="none" stroke-linecap="round"/>'
-            f'<text x="80" y="101" text-anchor="middle" font-family="{FONT}" font-size="64" font-weight="900" fill="#FFFFFF">{initial}</text></svg>')
-
-
-for slug, initial, a, b in MEMBERS:
-    open(f"{OUT}/avatar-{slug}.svg", "w", encoding="utf-8").write(avatar(initial, a, b, slug))
