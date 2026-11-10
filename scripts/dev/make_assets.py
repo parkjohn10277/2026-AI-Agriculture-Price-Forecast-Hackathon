@@ -118,7 +118,12 @@ def banner(c, key):
         s.append(f'<text x="{x+18}" y="366" font-family="{FONT}" font-size="14" fill="{c["muted"]}">{label} · MAPE</text>')
         s.append(f'<text x="{x+18}" y="408" font-family="{FONT}" font-size="32" font-weight="900" fill="{c["accent"]}">{val}</text>')
         x += 178
-    s.append(f'<text x="62" y="466" font-family="{MONO}" font-size="12" fill="{c["muted"]}">종합 9.73% · naive 12.07% 대비 −2.34pt · hackathon-ensemble-v11-zero</text>')
+    # provisional leaderboard rank card
+    s.append(f'<g filter="url(#sh{key})"><rect x="{x}" y="336" width="150" height="92" rx="18" fill="{c["straw"]}"/></g>')
+    s.append(f'<text x="{x+18}" y="366" font-family="{FONT}" font-size="14" font-weight="700" fill="#FFFFFF" fill-opacity="0.92">본선 잠정 순위</text>')
+    s.append(f'<text x="{x+18}" y="408" font-family="{FONT}" font-size="32" font-weight="900" fill="#FFFFFF">2위</text>')
+    s.append(f'<text x="{x+76}" y="408" font-family="{FONT}" font-size="15" font-weight="700" fill="#FFFFFF" fill-opacity="0.9">/ 15팀</text>')
+    s.append(f'<text x="62" y="466" font-family="{MONO}" font-size="12" fill="{c["muted"]}">종합 9.73% · 세 트랙 모두 2위 · naive 12.07% 대비 −2.34pt · 2026-11-10 리더보드 기준</text>')
     s.append('</g></svg>')
     return "\n".join(s)
 

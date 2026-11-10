@@ -42,5 +42,9 @@
 <g filter="url(#shdark)"><rect x="416" y="336" width="164" height="92" rx="18" fill="#11302A" fill-opacity="0.85" stroke="#2E6A5C"/></g>
 <text x="434" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#93B8AC">3순 후 · MAPE</text>
 <text x="434" y="408" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="32" font-weight="900" fill="#5FD3A0">10.84%</text>
-<text x="62" y="466" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">종합 9.73% · naive 12.07% 대비 −2.34pt · hackathon-ensemble-v11-zero</text>
+<g filter="url(#shdark)"><rect x="594" y="336" width="150" height="92" rx="18" fill="#E0AE74"/></g>
+<text x="612" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" fill-opacity="0.92">본선 잠정 순위</text>
+<text x="612" y="408" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="32" font-weight="900" fill="#FFFFFF">2위</text>
+<text x="670" y="408" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" fill-opacity="0.9">/ 15팀</text>
+<text x="62" y="466" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#93B8AC">종합 9.73% · 세 트랙 모두 2위 · naive 12.07% 대비 −2.34pt · 2026-11-10 리더보드 기준</text>
 </g></svg>
