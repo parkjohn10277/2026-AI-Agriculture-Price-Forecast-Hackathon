@@ -53,7 +53,7 @@
   </tr>
   <tr>
     <td align="center" valign="middle" width="33%">Data Analysis &amp; ML<br/>Econometrics</td>
-    <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial<br/>Data Forecasting<br/><br/>AI Strategy &amp; Data Analytics</td>
+    <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial<br/>Data Forecasting<br/>AI Strategy &amp; Data Analytics</td>
     <td align="center" valign="middle" width="33%">Agricultural Production Analysis<br/>Earth Environment</td>
   </tr>
   <tr>
