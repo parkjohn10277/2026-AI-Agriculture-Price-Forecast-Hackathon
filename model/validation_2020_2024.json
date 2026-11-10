@@ -1,0 +1,548 @@
+{
+  "holiday_configuration": {
+    "derivation_formula": "Short-track holiday multipliers = round(exp(0.75 * mean_fold_log_residual_2022_2024), 4); Long1-track Seollal radish block multipliers (blocks 0, 1, 2) = round(exp(0.50 * mean_fold_log_residual_2022_2024), 4).",
+    "holiday_block": {
+      "설날": {
+        "long1": {
+          "radish": {
+            "0": 1.1159,
+            "1": 1.1159,
+            "2": 1.1159
+          }
+        }
+      }
+    },
+    "holiday_guard": {},
+    "holiday_guard_enabled": false,
+    "holiday_short": {
+      "설날": {
+        "cabbage": [
+          [
+            1,
+            5,
+            1.1365
+          ]
+        ]
+      },
+      "추석": {
+        "cabbage": [
+          [
+            -1,
+            -1,
+            1.2276
+          ]
+        ],
+        "radish": [
+          [
+            -3,
+            -3,
+            1.0985
+          ],
+          [
+            -1,
+            -1,
+            1.0985
+          ]
+        ]
+      }
+    },
+    "note": "holiday_guard is empty ({}) in config.json, so statutory holiday multipliers (Chuseok and Seollal) are applied without a day-of-year guard."
+  },
+  "holiday_folds_2022_2024": {
+    "long1.설날.radish": {
+      "block_multipliers": {
+        "0": 1.1159,
+        "1": 1.1159,
+        "2": 1.1159
+      },
+      "derived_multiplier_exp_050_mean": 1.1159,
+      "folds": {
+        "2022": {
+          "gain_pt": 8.7655,
+          "mape_after_pct": 13.788,
+          "mape_before_pct": 22.5535,
+          "mean_log_residual": 0.2159,
+          "n_rows": 16
+        },
+        "2023": {
+          "gain_pt": 8.7158,
+          "mape_after_pct": 16.0827,
+          "mape_before_pct": 24.7985,
+          "mean_log_residual": 0.2436,
+          "n_rows": 14
+        },
+        "2024": {
+          "gain_pt": 8.2547,
+          "mape_after_pct": 13.1827,
+          "mape_before_pct": 21.4374,
+          "mean_log_residual": 0.1982,
+          "n_rows": 16
+        }
+      },
+      "gain_pt": 8.5727,
+      "mape_after_pct": 14.2759,
+      "mape_before_pct": 22.8486,
+      "mean_fold_log_residual_2022_2024": 0.21923,
+      "n_rows_total_2022_2024": 46
+    },
+    "short.설날.cabbage": {
+      "derived_multiplier_exp_075_mean": 1.1365,
+      "folds": {
+        "2022": {
+          "gain_pt": 0.7505,
+          "mape_after_pct": 6.9915,
+          "mape_before_pct": 7.742,
+          "mean_log_residual": 0.0806,
+          "n_rows": 15
+        },
+        "2023": {
+          "gain_pt": 10.8701,
+          "mape_after_pct": 9.4952,
+          "mape_before_pct": 20.3653,
+          "mean_log_residual": 0.2243,
+          "n_rows": 20
+        },
+        "2024": {
+          "gain_pt": 9.894,
+          "mape_after_pct": 9.0595,
+          "mape_before_pct": 18.9535,
+          "mean_log_residual": 0.2069,
+          "n_rows": 25
+        }
+      },
+      "gain_pt": 7.9335,
+      "mape_after_pct": 8.6877,
+      "mape_before_pct": 16.6212,
+      "mean_fold_log_residual_2022_2024": 0.1706,
+      "n_rows_total_2022_2024": 60,
+      "windows": [
+        [
+          1,
+          5,
+          1.1365
+        ]
+      ]
+    },
+    "short.추석.cabbage": {
+      "derived_multiplier_exp_075_mean": 1.2276,
+      "folds": {
+        "2022": {
+          "gain_pt": -1.6378,
+          "mape_after_pct": 12.3311,
+          "mape_before_pct": 10.6932,
+          "mean_log_residual": 0.1213,
+          "n_rows": 5
+        },
+        "2023": {
+          "gain_pt": -1.1866,
+          "mape_after_pct": 10.8712,
+          "mape_before_pct": 9.6846,
+          "mean_log_residual": 0.0808,
+          "n_rows": 5
+        },
+        "2024": {
+          "gain_pt": 12.563,
+          "mape_after_pct": 32.2395,
+          "mape_before_pct": 44.8025,
+          "mean_log_residual": 0.6183,
+          "n_rows": 6
+        }
+      },
+      "gain_pt": 3.8285,
+      "mape_after_pct": 19.3405,
+      "mape_before_pct": 23.169,
+      "mean_fold_log_residual_2022_2024": 0.27347,
+      "n_rows_total_2022_2024": 16,
+      "windows": [
+        [
+          -1,
+          -1,
+          1.2276
+        ]
+      ]
+    },
+    "short.추석.radish": {
+      "derived_multiplier_exp_075_mean": 1.0985,
+      "folds": {
+        "2022": {
+          "gain_pt": -0.6455,
+          "mape_after_pct": 26.3156,
+          "mape_before_pct": 25.6701,
+          "mean_log_residual": 0.2066,
+          "n_rows": 10
+        },
+        "2023": {
+          "gain_pt": 7.9374,
+          "mape_after_pct": 11.4793,
+          "mape_before_pct": 19.4168,
+          "mean_log_residual": 0.187,
+          "n_rows": 10
+        },
+        "2024": {
+          "gain_pt": -3.9223,
+          "mape_after_pct": 13.7605,
+          "mape_before_pct": 9.8381,
+          "mean_log_residual": -0.0177,
+          "n_rows": 12
+        }
+      },
+      "gain_pt": 0.8079,
+      "mape_after_pct": 16.9711,
+      "mape_before_pct": 17.779,
+      "mean_fold_log_residual_2022_2024": 0.1253,
+      "n_rows_total_2022_2024": 32,
+      "windows": [
+        [
+          -3,
+          -3,
+          1.0985
+        ],
+        [
+          -1,
+          -1,
+          1.0985
+        ]
+      ]
+    }
+  },
+  "max_origin_date": "2024-12-30",
+  "max_target_end_date": "2024-12-31",
+  "protocol": "3-fold annual expanding-window out-of-sample backtest on 2020-2024 data only: fold 2022 models trained on target end <= 2021-12-31, fold 2023 on target end <= 2022-12-31, and fold 2024 on target end <= 2023-12-31; evaluated on 2022-2024 origins with target end <= 2024-12-31.",
+  "role": "Evaluation of the fixed configuration on 2020-2024 data and verification of its numerical recipes. The script does not search over methods, holiday windows, mixture weights or damping strengths; it does not establish the historical selection procedure.",
+  "rows_ending_after_2024_12_31": 0,
+  "schema": "nongnet-validation-2020-2024-v3",
+  "shrinkage_derivation": "The fixed recipes use residual r = log(actual / last_price) - raw_model_log_ratio. Long-track cabbage and radish use round(exp(-var(r)), 4); short radish and long-track onion use round(exp(-0.5*var(r)), 4); short onion uses round(exp(-mean(r)), 4); other rules use 1.0. These are numerical recipes for the submitted configuration, not a proof of MAPE optimality. In particular, exp(-mean(r)) is an upward scale factor when mean(r) is negative; mean-log-residual centering would instead use exp(mean(r)).",
+  "tracks": {
+    "long1": {
+      "cabbage": {
+        "benchmark_block_mape_pct": 27.5826,
+        "benchmark_block_seas_mape_pct": 22.7426,
+        "cv_2022_2024_mape_pct": 21.2114,
+        "derived_shrink_2022_2024": 0.9442,
+        "gain_vs_block_pt": 6.3712,
+        "gain_vs_block_seas_pt": 1.5312,
+        "log_residual_mean_2022_2024": 0.08869,
+        "log_residual_variance_2022_2024": 0.05745,
+        "max_origin_date": "2024-12-06",
+        "max_target_end_date": "2024-12-31",
+        "method": "pooled_mw+ewma+seas",
+        "n_eval_rows_2022_2024": 216,
+        "scale_exp_neg_half_residual_variance": 0.9717,
+        "scale_exp_neg_residual_mean": 0.9151,
+        "scale_exp_neg_residual_variance": 0.9442,
+        "shrink": 0.9442,
+        "shrink_formula": "round(exp(-sigma^2), 4)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "dried_pepper": {
+        "benchmark_block_mape_pct": 2.0985,
+        "benchmark_block_seas_mape_pct": 2.3442,
+        "cv_2022_2024_mape_pct": 1.9984,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 0.1001,
+        "gain_vs_block_seas_pt": 0.3458,
+        "log_residual_mean_2022_2024": 0.00945,
+        "log_residual_variance_2022_2024": 0.00233,
+        "max_origin_date": "2024-12-06",
+        "max_target_end_date": "2024-12-31",
+        "method": "last",
+        "n_eval_rows_2022_2024": 216,
+        "scale_exp_neg_half_residual_variance": 0.9988,
+        "scale_exp_neg_residual_mean": 0.9906,
+        "scale_exp_neg_residual_variance": 0.9977,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "garlic": {
+        "benchmark_block_mape_pct": 1.6513,
+        "benchmark_block_seas_mape_pct": 1.9689,
+        "cv_2022_2024_mape_pct": 1.2472,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 0.404,
+        "gain_vs_block_seas_pt": 0.7216,
+        "log_residual_mean_2022_2024": -0.00038,
+        "log_residual_variance_2022_2024": 0.00048,
+        "max_origin_date": "2024-12-06",
+        "max_target_end_date": "2024-12-31",
+        "method": "last",
+        "n_eval_rows_2022_2024": 216,
+        "scale_exp_neg_half_residual_variance": 0.9998,
+        "scale_exp_neg_residual_mean": 1.0004,
+        "scale_exp_neg_residual_variance": 0.9995,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "onion": {
+        "benchmark_block_mape_pct": 11.9541,
+        "benchmark_block_seas_mape_pct": 13.0093,
+        "cv_2022_2024_mape_pct": 12.3405,
+        "derived_shrink_2022_2024": 0.9827,
+        "gain_vs_block_pt": -0.3864,
+        "gain_vs_block_seas_pt": 0.6689,
+        "log_residual_mean_2022_2024": -0.00438,
+        "log_residual_variance_2022_2024": 0.03496,
+        "max_origin_date": "2024-12-06",
+        "max_target_end_date": "2024-12-31",
+        "method": "et|et+block|et+ewma+seas",
+        "n_eval_rows_2022_2024": 216,
+        "scale_exp_neg_half_residual_variance": 0.9827,
+        "scale_exp_neg_residual_mean": 1.0044,
+        "scale_exp_neg_residual_variance": 0.9656,
+        "shrink": 0.9827,
+        "shrink_formula": "round(exp(-0.5 * sigma^2), 4)",
+        "state_space": null,
+        "volshrink": 0.25
+      },
+      "radish": {
+        "benchmark_block_mape_pct": 18.0864,
+        "benchmark_block_seas_mape_pct": 18.9919,
+        "cv_2022_2024_mape_pct": 18.5085,
+        "derived_shrink_2022_2024": 0.9553,
+        "gain_vs_block_pt": -0.4221,
+        "gain_vs_block_seas_pt": 0.4833,
+        "log_residual_mean_2022_2024": 0.07664,
+        "log_residual_variance_2022_2024": 0.04573,
+        "max_origin_date": "2024-12-06",
+        "max_target_end_date": "2024-12-31",
+        "method": "et_mf3_e20_wx",
+        "n_eval_rows_2022_2024": 216,
+        "scale_exp_neg_half_residual_variance": 0.9774,
+        "scale_exp_neg_residual_mean": 0.9262,
+        "scale_exp_neg_residual_variance": 0.9553,
+        "shrink": 0.9553,
+        "shrink_formula": "round(exp(-sigma^2), 4)",
+        "state_space": null,
+        "volshrink": null
+      }
+    },
+    "long2": {
+      "cabbage": {
+        "benchmark_block_mape_pct": 35.3933,
+        "benchmark_block_seas_mape_pct": 27.0297,
+        "cv_2022_2024_mape_pct": 25.0734,
+        "derived_shrink_2022_2024": 0.9261,
+        "gain_vs_block_pt": 10.3199,
+        "gain_vs_block_seas_pt": 1.9563,
+        "log_residual_mean_2022_2024": 0.14151,
+        "log_residual_variance_2022_2024": 0.07679,
+        "max_origin_date": "2024-11-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "pooled_mw+ewma+seas",
+        "n_eval_rows_2022_2024": 215,
+        "scale_exp_neg_half_residual_variance": 0.9623,
+        "scale_exp_neg_residual_mean": 0.868,
+        "scale_exp_neg_residual_variance": 0.9261,
+        "shrink": 0.9261,
+        "shrink_formula": "round(exp(-sigma^2), 4)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "dried_pepper": {
+        "benchmark_block_mape_pct": 2.6873,
+        "benchmark_block_seas_mape_pct": 3.002,
+        "cv_2022_2024_mape_pct": 2.4822,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 0.2051,
+        "gain_vs_block_seas_pt": 0.5198,
+        "log_residual_mean_2022_2024": 0.0131,
+        "log_residual_variance_2022_2024": 0.00282,
+        "max_origin_date": "2024-11-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "last",
+        "n_eval_rows_2022_2024": 215,
+        "scale_exp_neg_half_residual_variance": 0.9986,
+        "scale_exp_neg_residual_mean": 0.987,
+        "scale_exp_neg_residual_variance": 0.9972,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "garlic": {
+        "benchmark_block_mape_pct": 1.9873,
+        "benchmark_block_seas_mape_pct": 2.4498,
+        "cv_2022_2024_mape_pct": 1.5904,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 0.3969,
+        "gain_vs_block_seas_pt": 0.8594,
+        "log_residual_mean_2022_2024": -0.00077,
+        "log_residual_variance_2022_2024": 0.00082,
+        "max_origin_date": "2024-11-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "last",
+        "n_eval_rows_2022_2024": 215,
+        "scale_exp_neg_half_residual_variance": 0.9996,
+        "scale_exp_neg_residual_mean": 1.0008,
+        "scale_exp_neg_residual_variance": 0.9992,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "onion": {
+        "benchmark_block_mape_pct": 13.1918,
+        "benchmark_block_seas_mape_pct": 14.7642,
+        "cv_2022_2024_mape_pct": 14.538,
+        "derived_shrink_2022_2024": 0.9773,
+        "gain_vs_block_pt": -1.3462,
+        "gain_vs_block_seas_pt": 0.2263,
+        "log_residual_mean_2022_2024": -0.00742,
+        "log_residual_variance_2022_2024": 0.04588,
+        "max_origin_date": "2024-11-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "et_clip",
+        "n_eval_rows_2022_2024": 215,
+        "scale_exp_neg_half_residual_variance": 0.9773,
+        "scale_exp_neg_residual_mean": 1.0074,
+        "scale_exp_neg_residual_variance": 0.9552,
+        "shrink": 0.9773,
+        "shrink_formula": "round(exp(-0.5 * sigma^2), 4)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "radish": {
+        "benchmark_block_mape_pct": 22.766,
+        "benchmark_block_seas_mape_pct": 23.3663,
+        "cv_2022_2024_mape_pct": 21.8569,
+        "derived_shrink_2022_2024": 0.9387,
+        "gain_vs_block_pt": 0.9091,
+        "gain_vs_block_seas_pt": 1.5094,
+        "log_residual_mean_2022_2024": 0.05295,
+        "log_residual_variance_2022_2024": 0.06326,
+        "max_origin_date": "2024-11-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "et_mf3_e20_wx+ewma50",
+        "n_eval_rows_2022_2024": 215,
+        "scale_exp_neg_half_residual_variance": 0.9689,
+        "scale_exp_neg_residual_mean": 0.9484,
+        "scale_exp_neg_residual_variance": 0.9387,
+        "shrink": 0.9387,
+        "shrink_formula": "round(exp(-sigma^2), 4)",
+        "state_space": null,
+        "volshrink": null
+      }
+    },
+    "short": {
+      "cabbage": {
+        "benchmark_block_mape_pct": 19.9481,
+        "benchmark_block_seas_mape_pct": 18.889,
+        "cv_2022_2024_mape_pct": 15.0793,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 4.8688,
+        "gain_vs_block_seas_pt": 3.8097,
+        "log_residual_mean_2022_2024": 0.01984,
+        "log_residual_variance_2022_2024": 0.04081,
+        "max_origin_date": "2024-12-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "et",
+        "n_eval_rows_2022_2024": 1776,
+        "scale_exp_neg_half_residual_variance": 0.9798,
+        "scale_exp_neg_residual_mean": 0.9804,
+        "scale_exp_neg_residual_variance": 0.96,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": {
+          "lam": 0.1,
+          "target": "ewma50+0.5seas",
+          "w_max": 0.25
+        },
+        "volshrink": null
+      },
+      "dried_pepper": {
+        "benchmark_block_mape_pct": 1.6433,
+        "benchmark_block_seas_mape_pct": 1.9566,
+        "cv_2022_2024_mape_pct": 1.0293,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 0.614,
+        "gain_vs_block_seas_pt": 0.9273,
+        "log_residual_mean_2022_2024": 0.0037,
+        "log_residual_variance_2022_2024": 0.00123,
+        "max_origin_date": "2024-12-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "last",
+        "n_eval_rows_2022_2024": 1422,
+        "scale_exp_neg_half_residual_variance": 0.9994,
+        "scale_exp_neg_residual_mean": 0.9963,
+        "scale_exp_neg_residual_variance": 0.9988,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "garlic": {
+        "benchmark_block_mape_pct": 0.9658,
+        "benchmark_block_seas_mape_pct": 1.1244,
+        "cv_2022_2024_mape_pct": 0.5324,
+        "derived_shrink_2022_2024": 1.0,
+        "gain_vs_block_pt": 0.4333,
+        "gain_vs_block_seas_pt": 0.592,
+        "log_residual_mean_2022_2024": -0.00017,
+        "log_residual_variance_2022_2024": 0.00013,
+        "max_origin_date": "2024-12-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "last",
+        "n_eval_rows_2022_2024": 1432,
+        "scale_exp_neg_half_residual_variance": 0.9999,
+        "scale_exp_neg_residual_mean": 1.0002,
+        "scale_exp_neg_residual_variance": 0.9999,
+        "shrink": 1.0,
+        "shrink_formula": "unit (1.0)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "onion": {
+        "benchmark_block_mape_pct": 10.2726,
+        "benchmark_block_seas_mape_pct": 10.5834,
+        "cv_2022_2024_mape_pct": 8.5048,
+        "derived_shrink_2022_2024": 1.0086,
+        "gain_vs_block_pt": 1.7678,
+        "gain_vs_block_seas_pt": 2.0786,
+        "log_residual_mean_2022_2024": -0.00854,
+        "log_residual_variance_2022_2024": 0.01485,
+        "max_origin_date": "2024-12-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "h1last_et_hg_e20_x3",
+        "n_eval_rows_2022_2024": 1776,
+        "scale_exp_neg_half_residual_variance": 0.9926,
+        "scale_exp_neg_residual_mean": 1.0086,
+        "scale_exp_neg_residual_variance": 0.9853,
+        "shrink": 1.0086,
+        "shrink_formula": "round(exp(-mean_log_residual), 4)",
+        "state_space": null,
+        "volshrink": null
+      },
+      "radish": {
+        "benchmark_block_mape_pct": 17.8927,
+        "benchmark_block_seas_mape_pct": 17.733,
+        "cv_2022_2024_mape_pct": 15.5237,
+        "derived_shrink_2022_2024": 0.9813,
+        "gain_vs_block_pt": 2.369,
+        "gain_vs_block_seas_pt": 2.2093,
+        "log_residual_mean_2022_2024": 0.017,
+        "log_residual_variance_2022_2024": 0.03785,
+        "max_origin_date": "2024-12-26",
+        "max_target_end_date": "2024-12-31",
+        "method": "et+block|et_mf3+block|et_hg_x3+block|pooled_mw+block|b1_coint|b1_coint",
+        "n_eval_rows_2022_2024": 1776,
+        "scale_exp_neg_half_residual_variance": 0.9813,
+        "scale_exp_neg_residual_mean": 0.9831,
+        "scale_exp_neg_residual_variance": 0.9629,
+        "shrink": 0.9813,
+        "shrink_formula": "round(exp(-0.5 * sigma^2), 4)",
+        "state_space": {
+          "lam": 0.75,
+          "target": "block",
+          "w_max": 0.25
+        },
+        "volshrink": null
+      }
+    }
+  },
+  "verified_2020_2024_max_price_date": "2024-12-31",
+  "diagnostic_scope": "This diagnostic uses harness.FeatureBuilder's stabilized OLS slopes in all folds. Reproduction of the stored long-track banks instead uses train.LongTrainingFeatureBuilder's centered np.polyfit slopes. The formulas are mathematically equivalent but need not produce identical tree fits in floating-point arithmetic. The base estimators are trained before each evaluation year. Scale statistics are pooled from the same 2022-2024 folds on which the adjusted configuration is evaluated; these adjusted metrics are not a nested, independent estimate of the final pipeline's generalization error."
+}

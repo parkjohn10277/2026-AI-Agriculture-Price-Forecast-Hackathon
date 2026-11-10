@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="IMPACT Lab · 2026 AI 농산물 가격예측 해커톤">
+<rect width="1280" height="420" rx="24" fill="#F6F4EE"/>
+<path d="M700.0,250.0 L709.5,229.4 L719.0,210.9 L728.5,196.5 L738.0,187.1 L747.5,183.2 L757.0,184.1 L766.5,188.4 L776.0,194.5 L785.5,200.4 L795.0,204.4 L804.5,205.5 L814.0,203.3 L823.5,198.5 L833.0,192.2 L842.5,186.2 L852.0,182.3 L861.5,182.2 L871.0,187.0 L880.5,196.9 L890.0,211.5 L899.5,229.2 L909.0,248.1 L918.5,266.1 L928.0,281.0 L937.5,291.2 L947.0,295.8 L956.5,295.0 L966.0,289.5 L975.5,281.0 L985.0,271.2 L994.5,262.2 L1004.0,255.5 L1013.5,251.9 L1023.0,251.5 L1032.5,253.7 L1042.0,256.9 L1051.5,259.4 L1061.0,259.4 L1070.5,255.4 L1080.0,246.6 L1089.5,233.0 L1099.0,215.4 L1108.5,195.6 L1118.0,175.4 L1127.5,157.3 L1137.0,143.0 L1146.5,134.0 L1156.0,130.8 L1165.5,133.0 L1175.0,139.5 L1184.5,148.6 L1194.0,158.3 L1203.5,166.7 L1213.0,172.4 L1222.5,174.7 L1232.0,173.8 L1241.5,170.7 L1251.0,166.8 L1260.5,164.0 L1270.0,164.0" fill="none" stroke="#DDD8CB" stroke-width="3" stroke-linecap="round"/>
+<path d="M1080.0,246.6 L1080.0,246.6 L1089.5,233.0 L1099.0,215.4 L1108.5,195.6 L1118.0,175.4 L1127.5,157.3 L1137.0,143.0 L1146.5,134.0 L1156.0,130.8 L1165.5,133.0 L1175.0,139.5 L1184.5,148.6 L1194.0,158.3 L1203.5,166.7 L1213.0,172.4 L1222.5,174.7 L1232.0,173.8 L1241.5,170.7 L1251.0,166.8 L1260.5,164.0 L1270.0,164.0" fill="none" stroke="#2E6B4E" stroke-width="3.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+<line x1="1080.0" y1="70" x2="1080.0" y2="350" stroke="#C7782A" stroke-width="1.5" stroke-dasharray="4 6"/>
+<text x="1090.0" y="88" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#C7782A">기준일 D · 이전 관측만</text>
+<text x="64" y="86" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="15" letter-spacing="3" fill="#2E6B4E">IMPACT LAB · NONGNET HACKATHON 2026 · FINAL</text>
+<text x="64" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="46" font-weight="800" fill="#18231D">경계를 지키는</text>
+<text x="64" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="46" font-weight="800" fill="#18231D">농산물 가격 예보</text>
+<text x="64" y="246" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="19" fill="#5B675F">2020–2024로만 배우고, 기준일 이전만 읽는 5품목 · 3트랙 예측 모델</text>
+<rect x="64" y="282" width="168" height="84" rx="14" fill="#FFFFFF" stroke="#DDD8CB"/>
+<text x="82" y="312" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#5B675F">10일 예측 · MAPE</text>
+<text x="82" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="30" font-weight="800" fill="#2E6B4E">9.12%</text>
+<rect x="246" y="282" width="168" height="84" rx="14" fill="#FFFFFF" stroke="#DDD8CB"/>
+<text x="264" y="312" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#5B675F">2순 후 · MAPE</text>
+<text x="264" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="30" font-weight="800" fill="#2E6B4E">11.46%</text>
+<rect x="428" y="282" width="168" height="84" rx="14" fill="#FFFFFF" stroke="#DDD8CB"/>
+<text x="446" y="312" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="14" fill="#5B675F">3순 후 · MAPE</text>
+<text x="446" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif" font-size="30" font-weight="800" fill="#2E6B4E">10.84%</text>
+<text x="1216" y="384" text-anchor="end" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#5B675F">배추 · 무 · 양파 · 깐마늘 · 건고추   |   hackathon-ensemble-v11-zero</text>
+</svg>

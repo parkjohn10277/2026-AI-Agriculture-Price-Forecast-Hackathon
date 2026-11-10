@@ -1,0 +1,12 @@
+# Submitted artifacts are stored byte-for-byte (their SHA-256 values are recorded
+# in tracks/*/reproducibility.json). Never normalize line endings here.
+model/**        -text
+tracks/**       -text
+predictions/**  -text
+
+*.joblib  binary
+*.xlsx    binary
+*.pdf     binary
+*.pptx    binary
+
+docs/**   linguist-documentation

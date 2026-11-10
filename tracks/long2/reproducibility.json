@@ -1,0 +1,663 @@
+{
+  "cases": [
+    {
+      "case_id": "C01",
+      "origin": "2024-12-31",
+      "weights_cutoff": "2024-12-30"
+    },
+    {
+      "case_id": "C02",
+      "origin": "2025-01-31",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C03",
+      "origin": "2025-02-28",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C04",
+      "origin": "2025-03-31",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C05",
+      "origin": "2025-04-30",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C06",
+      "origin": "2025-05-31",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C07",
+      "origin": "2025-06-30",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C08",
+      "origin": "2025-07-31",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C09",
+      "origin": "2025-08-31",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C10",
+      "origin": "2025-09-30",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C11",
+      "origin": "2025-10-31",
+      "weights_cutoff": "2024-12-31"
+    },
+    {
+      "case_id": "C12",
+      "origin": "2025-11-30",
+      "weights_cutoff": "2024-12-31"
+    }
+  ],
+  "dependencies": [
+    "# CPython 3.14.8 (standard GIL build), CPU only, no GPU. Install offline-capable wheels with: pip install -r requirements.txt",
+    "numpy==2.5.3",
+    "pandas==3.0.6",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "joblib==1.6.0",
+    "threadpoolctl==3.7.0"
+  ],
+  "environment_scope": "python/platform describe this packaging and verification host.",
+  "files": [
+    {
+      "bytes": 2080,
+      "path": "README.md",
+      "sha256": "d122b07c998398931ca1db534c0dff3f036274394ec542e7b4b3fe633423a3de"
+    },
+    {
+      "bytes": 2890,
+      "path": "REPRODUCE.md",
+      "sha256": "a09ffe13473b905e4732c1b285fab4964f45620155c7cbe54387dd42b81afbc7"
+    },
+    {
+      "bytes": 9994,
+      "path": "config.json",
+      "sha256": "2395ec04af593e308bfe724d8107e23aadee2455097f100654f61294946de69a"
+    },
+    {
+      "bytes": 9454,
+      "path": "data.py",
+      "sha256": "c96cd5dc2a2d8ccca9fa22c01b07b4cd200c24182086fabd9f00b8d24e9d5576"
+    },
+    {
+      "bytes": 11601,
+      "path": "extra_features2.py",
+      "sha256": "d6db5aa615599d4e5599a66e1b9f3ce35edddfee7da6687bb66bdf1b94884e24"
+    },
+    {
+      "bytes": 5905,
+      "path": "extra_features3.py",
+      "sha256": "11516b1a6afb784c75c423361451f18c3beed1be5be8172d6326aafcbf08541c"
+    },
+    {
+      "bytes": 12933,
+      "path": "harness.py",
+      "sha256": "9afc241e6da44c99be3d8de75c4696d3f52d5b517b7cda06026eeca6ac193443"
+    },
+    {
+      "bytes": 13438,
+      "path": "package.py",
+      "sha256": "5b551852b6e38c8b2dccd05522cb360e1e7026f46276488f721af82552a21ace"
+    },
+    {
+      "bytes": 19137,
+      "path": "predict.py",
+      "sha256": "b92b2db191e0174bba37c64e7947a2ba892605485af4603747b30aa1e06ceab3"
+    },
+    {
+      "bytes": 222,
+      "path": "requirements.txt",
+      "sha256": "b39001fe9e2ba1f0dd64d06bdd92781f1899f60483e531c2e0c73122ec727e1b"
+    },
+    {
+      "bytes": 1532,
+      "path": "script.py",
+      "sha256": "e04d4cb44ead294adf38e9ea9378ec210cea1848cc2547db78f78daf06a5b094"
+    },
+    {
+      "bytes": 2032,
+      "path": "split_slim.py",
+      "sha256": "f94cc48e462d8d2b77e95ba42f73691a705381ac1efcad6a5a45cdbe41b364b4"
+    },
+    {
+      "bytes": 8629,
+      "path": "train.py",
+      "sha256": "cb9f32509fc76c19f2df03add620580a697daf6c3ee8e06f7a3d4934ba7c56b7"
+    },
+    {
+      "bytes": 19827,
+      "path": "validate_2020_2024.py",
+      "sha256": "2ab2c0e837c556f24fc0e618021ad8113e966e4a52e2dc3d64e6ecd7525af83f"
+    },
+    {
+      "bytes": 19689,
+      "path": "validation_2020_2024.json",
+      "sha256": "28c3b246b4a98e2e6496ccecd3fd1d7200ad2e6f3dc85ddee5f14ccfaaec03f7"
+    },
+    {
+      "bytes": 6395,
+      "path": "workbook.py",
+      "sha256": "5e3c60fa5be334c66d7b97ed8927aef7f7a06550c09643f16a7c7159a3a7d7c8"
+    },
+    {
+      "bytes": 1479348,
+      "path": "weights.joblib",
+      "sha256": "9301bc9d42063fb5b3b503c9a6dfcab58fb7fb010d1675780bdf36dc99623936"
+    }
+  ],
+  "inference": {
+    "command_from_model_directory": "python script.py --output reproduced.csv",
+    "data": "input/cases.json and case-specific observations selected by input/input-manifest.json",
+    "files": [
+      {
+        "path": "input/by_case/C01/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C01/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "bec0009f4c9318d05b18565bbb742e52a5c345efb69aa41e619999e02e3e9a01"
+      },
+      {
+        "path": "input/by_case/C01/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "557e84195a7e7c2e1349541a683075ac3c7a0c75350c5f4ab844a264b3629cce"
+      },
+      {
+        "path": "input/by_case/C01/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "cbf6b02c1037778745f683246c76223e79308b86877f1b9a1945aba74947572b"
+      },
+      {
+        "path": "input/by_case/C01/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "de6d645550e6687a5db6eae16dd5a200565ca636a1f3e8a0ee69d006f03d28b2"
+      },
+      {
+        "path": "input/by_case/C01/2025/가격_일별_2025.csv",
+        "sha256": "4ef535dff4f68b74cbfe8535e27141a79e59efee8fa47f892cdb3ece845fc5a6"
+      },
+      {
+        "path": "input/by_case/C01/input-manifest.json",
+        "sha256": "c421f540f0b26b5af4a8e29dadbcadc440a5b36b42bb7751e7d71c11ed9fa774"
+      },
+      {
+        "path": "input/by_case/C02/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C02/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "648f854e98f67c6b9456120ac4bdd1bfd8a22015ce7b3e26fb6db31f3c27f6ae"
+      },
+      {
+        "path": "input/by_case/C02/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "d82fecae04f36bf6fbf68226dd4c5bc96d88d83c95e87e7f946845ff89812263"
+      },
+      {
+        "path": "input/by_case/C02/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "d39382a6e44dc2d5d650075e3f034117b8f38df8f8a8a90a4a4024f02d6c150e"
+      },
+      {
+        "path": "input/by_case/C02/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "82afdeea6d06c7dd982aa2defb91e9813c844da2432584c465975a8d87bd891c"
+      },
+      {
+        "path": "input/by_case/C02/2025/가격_일별_2025.csv",
+        "sha256": "2ffcab5edf74c04defd59e85b823377ec2d4adc947fd082873c6d46a6e9a3542"
+      },
+      {
+        "path": "input/by_case/C02/input-manifest.json",
+        "sha256": "0e34c42854e70419adcc8cb98fc3014d9f4e233517d68af6c8ba77759c6d5605"
+      },
+      {
+        "path": "input/by_case/C03/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C03/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "0104a019d0410030520f7008781527e0996921b8b1ffd12ad9e7a740b87dc994"
+      },
+      {
+        "path": "input/by_case/C03/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "4afc4979d154a0c291555490ebc0843c364759dc4d7e762ba5080e0ab1ac9dca"
+      },
+      {
+        "path": "input/by_case/C03/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "f6c7e763e705fea97e3f6a6f24033793212179a1a12cbfcadcafaa310772f10f"
+      },
+      {
+        "path": "input/by_case/C03/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "a3b9fe32e2dbf0fda1eb42a8a7c080200823a24d8565e0b57c44e5526085b449"
+      },
+      {
+        "path": "input/by_case/C03/2025/가격_일별_2025.csv",
+        "sha256": "2c64d6e87f8d84a68c935ec931735698a210e05bbf9bd378a0ab3f7bff79953f"
+      },
+      {
+        "path": "input/by_case/C03/input-manifest.json",
+        "sha256": "9182b0a9394d697d67f88b07e2c689fdc3343e08120092a36db186d288aa4053"
+      },
+      {
+        "path": "input/by_case/C04/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C04/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "ff4b58c4e44a57ca16ceff7f245f496a4019561f2337d399601bb8c6446870e5"
+      },
+      {
+        "path": "input/by_case/C04/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "5b0010542d94b98ac0831dad7e42c943efee5c4056d82fda6fdbf92c1435bf25"
+      },
+      {
+        "path": "input/by_case/C04/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "7426e1e9de163f80496052c2442993592df4f93da4afe2c45ee2394bfeec34e1"
+      },
+      {
+        "path": "input/by_case/C04/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "896b2db08639d3dafd623f592a6db98bff0951102ad17017ef726d679c1be28b"
+      },
+      {
+        "path": "input/by_case/C04/2025/가격_일별_2025.csv",
+        "sha256": "971881cb3b9b2b072765abc12cd638fef7e3fc48526a8122291b43a352eefbcc"
+      },
+      {
+        "path": "input/by_case/C04/input-manifest.json",
+        "sha256": "77e6b9194be1c854e334fe33db61ce701aa0a49be4a52de01b834b31cdf0c443"
+      },
+      {
+        "path": "input/by_case/C05/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C05/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "5439eb9309fdda4944c1684acb06f5109681fd37052930fb82a3ea4e83919225"
+      },
+      {
+        "path": "input/by_case/C05/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "a92cd8d92d2bbd5b02389ba14696c78e12ca4243c639bc84b07fdc7f57ec2b5f"
+      },
+      {
+        "path": "input/by_case/C05/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "1fc496603c257753d5472aceb31c50a4fdfed2d26f028171ac9e56f10354e052"
+      },
+      {
+        "path": "input/by_case/C05/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "fee67a2a2ae2b925a6cf2655f4d48fab4a36a578f533217470e8e1a14f5f6eb6"
+      },
+      {
+        "path": "input/by_case/C05/2025/가격_일별_2025.csv",
+        "sha256": "df38a64277be632ab8b8320b19753ef5f0fb0ef57baac0f3774057254f02adbd"
+      },
+      {
+        "path": "input/by_case/C05/input-manifest.json",
+        "sha256": "2c465996aad39006fd8691ea3a995cdd9f22db015ace03c979a8485215c57613"
+      },
+      {
+        "path": "input/by_case/C06/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C06/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "cf27b38b5ddea010e3c4b7910b60d6f237f23cdb66346ce65a55449c2cf84dd4"
+      },
+      {
+        "path": "input/by_case/C06/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "9e8096beb05ffd285f1fadb139803bfe3395b5e29c0f2c41771fdba32b291b05"
+      },
+      {
+        "path": "input/by_case/C06/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "00e2e213707f1aeaed0c858664708ae97e81d64cc1b51af5c9b340e0d8003100"
+      },
+      {
+        "path": "input/by_case/C06/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "fc7b5df4f866cd8fe9b1abde7f06904eb15fc6de4da36b2374189aa30b2300f3"
+      },
+      {
+        "path": "input/by_case/C06/2025/가격_일별_2025.csv",
+        "sha256": "42fbb978d2f5fc6c383eb211b6e6a76b9543138b638c9cfd5e3c3018f9feb547"
+      },
+      {
+        "path": "input/by_case/C06/input-manifest.json",
+        "sha256": "97ce856643c2cfaf44bbff494f5db6e2dab08887b06f56f37d273b9eaf1a62cb"
+      },
+      {
+        "path": "input/by_case/C07/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C07/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "59820dda7753969e9d45f5e783c465a02ba115b712e94db3f84e8948587589f5"
+      },
+      {
+        "path": "input/by_case/C07/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "963010f05ce6cd1204c1628016b8dc574450c41efcf887e1c7d92d1a6a9546a4"
+      },
+      {
+        "path": "input/by_case/C07/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "2d643b1c6fade7278c982b9cfaa3b281329e38aad918e81befc91ebb50a1469e"
+      },
+      {
+        "path": "input/by_case/C07/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "fa9ab77777d80e3951076606593a0bbc259e814ef9a33a7e3dbb816ec2702fc1"
+      },
+      {
+        "path": "input/by_case/C07/2025/가격_일별_2025.csv",
+        "sha256": "a23a9e37012e46d7603373c043a8c745a2bf0a8d09f9f4314c67f37b9c4f18b1"
+      },
+      {
+        "path": "input/by_case/C07/input-manifest.json",
+        "sha256": "2a3a86e6373a3dbffed19d34efa98984358437009ff9b7c0f45fd748e460f731"
+      },
+      {
+        "path": "input/by_case/C08/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C08/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "b4fe50eb596fe71d6c289fe909b4c7dc3d97b855286ada7ae0ddc8288c0b4ce6"
+      },
+      {
+        "path": "input/by_case/C08/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "2e4e3601e1a470da7418f6908f814809b45abfa40bd94b2a7d943c6242ca6706"
+      },
+      {
+        "path": "input/by_case/C08/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "53b54714c42ba48fd7756d6aa6bf6631c5677ed9369babdc48c73daefb41f617"
+      },
+      {
+        "path": "input/by_case/C08/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "90e9c0e61baa7b538c1efc668c025628745ba46e23d0ddd438edffb01857ead3"
+      },
+      {
+        "path": "input/by_case/C08/2025/가격_일별_2025.csv",
+        "sha256": "76730d2610d11b3a2c39f52938ca1ac2cf0f88e58c8990275bbee4b577e38a9e"
+      },
+      {
+        "path": "input/by_case/C08/input-manifest.json",
+        "sha256": "80bcc4d516cc47e006285d7f6e8f3382469d62eaa5794b659b2088f72fb73629"
+      },
+      {
+        "path": "input/by_case/C09/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C09/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "5db2b7e4ea2d4dcef7d8d4024224bc96ee990eaf39a35326c4e07226b8fca6e2"
+      },
+      {
+        "path": "input/by_case/C09/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "72b5eaa5cc444a7e533af7bec561199c2315c3f6cddc99e927724d8a7512aa6f"
+      },
+      {
+        "path": "input/by_case/C09/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "80b439ed7e38c05cd17bb316be57a2268232253a737e915e3bb8b09a19acb64f"
+      },
+      {
+        "path": "input/by_case/C09/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "d6966f553eb793f98f836baa3bb28e69fefb37ad187420ad5f1b0dca1edadee0"
+      },
+      {
+        "path": "input/by_case/C09/2025/가격_일별_2025.csv",
+        "sha256": "c1a053c22a1d2207ae6da7d86686669d7eb9379c977ab474ac04a138e05d950e"
+      },
+      {
+        "path": "input/by_case/C09/input-manifest.json",
+        "sha256": "49c44401fe571ef252b46660435852759eee6f0ca3dac457167bec160c9d69fc"
+      },
+      {
+        "path": "input/by_case/C10/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C10/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "cbf2703842efe5cd7dacdb6d2b1637e39a589aec401b9d14624a827320950ebc"
+      },
+      {
+        "path": "input/by_case/C10/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "7a12b4475988587ca36830f3f2dd4d3cafad03f32cb1cf05b180bbeda95ff611"
+      },
+      {
+        "path": "input/by_case/C10/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "c127ecf5cb4933ab685f0701ee46c5e90e2d210b620f94a5a768b59804b35bd0"
+      },
+      {
+        "path": "input/by_case/C10/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "1a475143ea098260d903d90cfc4ba83b5efc234bd45bb5b72fc71ab95ab7875d"
+      },
+      {
+        "path": "input/by_case/C10/2025/가격_일별_2025.csv",
+        "sha256": "e92647bf85fe98a93fee7c8ee58e69902b71d3637c5482ca770dd5e51b59a5b3"
+      },
+      {
+        "path": "input/by_case/C10/input-manifest.json",
+        "sha256": "854d3041255ecb5ba196e536e88c1258fc0d8cfa37a0052614349018b3931bbe"
+      },
+      {
+        "path": "input/by_case/C11/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C11/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "022056ea21b5647b0cf350e8620caa8735cb938e3a4690034fd38264eb488120"
+      },
+      {
+        "path": "input/by_case/C11/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "73209b6334ac0ba76934f89eacbdbdd2bc155a6ddde7a67bcd0adfec52c2a2f6"
+      },
+      {
+        "path": "input/by_case/C11/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "3ca7a6fa37ab5d9b60796983657fc053278bbaf28070e0128a3bdb3fefa7db57"
+      },
+      {
+        "path": "input/by_case/C11/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "4ea574d78b0d28be0ac8e6b3ef05648a81eacb79c2af3a91b381395c279585dd"
+      },
+      {
+        "path": "input/by_case/C11/2025/가격_일별_2025.csv",
+        "sha256": "d43c98b532d224be7a670fa741ca0f8fa537df617620a70ea1d2f808d5755baa"
+      },
+      {
+        "path": "input/by_case/C11/input-manifest.json",
+        "sha256": "8fa9ab382dd3af35a24fbcf6fba2da51cb53f1b629c3c9eef70fb3344a96a356"
+      },
+      {
+        "path": "input/by_case/C12/2025/Supplementary/날씨와공휴일_2025/public_holidays.csv",
+        "sha256": "17c9d3633eed484cd90547cee032dff113af1bdc542ceb24c4f7498fecfed211"
+      },
+      {
+        "path": "input/by_case/C12/2025/Supplementary/날씨와공휴일_2025/weather_daily.csv",
+        "sha256": "8ed0a6ac3bbe9acd872bc94cda4594e5ddd8ad54f4b609d1b113d3ca0ca078ef"
+      },
+      {
+        "path": "input/by_case/C12/2025/Supplementary/물량_일별_2025.csv",
+        "sha256": "69bbd04adc7f258539aa450690403774c16216601d42f8da3219f1d1219971fb"
+      },
+      {
+        "path": "input/by_case/C12/2025/Supplementary/시장별_경락정보_2025/origin_daily_2025_grade12.csv",
+        "sha256": "eb58844e48929ac0ba6e421e06403e27e351ca9d69b934a20833be532a3171c7"
+      },
+      {
+        "path": "input/by_case/C12/2025/Supplementary/시장별_경락정보_2025/settlement_daily_2025.csv",
+        "sha256": "6ba00e1483820474c915fec2121ec4a2fa786070f34ec739d2bca0c9d20cc61e"
+      },
+      {
+        "path": "input/by_case/C12/2025/가격_일별_2025.csv",
+        "sha256": "037fa583e1bd041cf6c5e269e39d155dec3b820ec1e9bdcaf8035d59ea3a8ecb"
+      },
+      {
+        "path": "input/by_case/C12/input-manifest.json",
+        "sha256": "9616b9be9f4583d19733f981aa6925ed0d758ef07c76246d9912d2a3f7d4bbec"
+      },
+      {
+        "path": "input/cases.json",
+        "sha256": "b65ba88ffcac70037577c2115673e7da14fc945a78f4c96f90df7a74bab046a7"
+      },
+      {
+        "path": "input/input-manifest.json",
+        "sha256": "27b8e7d393f4da5d9d0a442b56e72c7884bc539af373fb3b79765a7794a83372"
+      },
+      {
+        "path": "input/source_metadata/2025/Supplementary/날씨와공휴일_2025/DATA_DICTIONARY.json",
+        "sha256": "dafdc835de006579f6a4ede29c024687d95596f31ad1ccd6fad297fa9e0569bd"
+      },
+      {
+        "path": "input/source_metadata/2025/Supplementary/날씨와공휴일_2025/README.md",
+        "sha256": "b6dfb055f6ccc8a639fb57038d3cf0c9ea24dc105f970f70a0ee15092e5c0548"
+      },
+      {
+        "path": "input/source_metadata/2025/Supplementary/날씨와공휴일_2025/TRAINING_MANIFEST.json",
+        "sha256": "d67c77db0532fbb29462795b186792ca0b7707092185f3ef05dc40a1c5622b5e"
+      },
+      {
+        "path": "input/source_metadata/2025/Supplementary/시장별_경락정보_2025/DATA_DICTIONARY.json",
+        "sha256": "aebcd7dcf896f7cdc1cfd66f6966c9084b60593250582d5812411f2cd2d8e91e"
+      },
+      {
+        "path": "input/source_metadata/2025/Supplementary/시장별_경락정보_2025/README.md",
+        "sha256": "41bbc6d0093e7f481ad65066149da4074e244683ae61bf9f9a2a35c379cc5c2e"
+      },
+      {
+        "path": "input/source_metadata/2025/Supplementary/시장별_경락정보_2025/TRAINING_MANIFEST.json",
+        "sha256": "8ef25e97cb04cac9c0a8c00d28768fc65626a463ee0fc2431b7a6fce76c2ce8f"
+      },
+      {
+        "path": "input/source_metadata/README.md",
+        "sha256": "d03ef2d86606121c087ffa0f17835c4193d3bf2c3471f5d1366d8d1bd4965906"
+      }
+    ],
+    "output_csv_sha256": "dac8c8be8968d562ade7df5c0f73affb18ceaa0b42d72e5042b229ed43c08268",
+    "output_prices": 60,
+    "output_rows": 12,
+    "strict_before_origin": true
+  },
+  "model_version": "hackathon-ensemble-v11-zero",
+  "observed_verification": {
+    "changed_items_vs_v11_zero": [
+      "cabbage"
+    ],
+    "changed_prices_vs_v11_zero": 11,
+    "comparison": "each workbook cell vs generated CSV as exact decimal text (case, target date/window, commodity by header); no rounding or tolerance",
+    "date": "2026-11-08",
+    "environment": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39 (Ubuntu 24.04.4 LTS, WSL2) / Intel Core Ultra 7 265KF / CPython 3.14.8 standard GIL build / pinned requirements / 4 threads / network disabled",
+    "fresh_retraining": {
+      "all_prices_match": true,
+      "command": "python model/train.py --out retrained.joblib; python model/predict.py --track long2 --weights retrained.joblib",
+      "matching_prices": 60,
+      "maximum_absolute_price_difference": 0.0,
+      "prices": 60,
+      "repeat_runs_byte_identical": true,
+      "train_output_sha256": "f32eb78d9d2497387b6e4ac8aafe1081d95420592deecfa8360e661de8bd07ae"
+    },
+    "not_verified": "fresh retraining on macOS or Windows",
+    "prediction_csv_sha256": "dac8c8be8968d562ade7df5c0f73affb18ceaa0b42d72e5042b229ed43c08268",
+    "saved_model_replay": {
+      "all_prices_match": true,
+      "matching_prices": 60,
+      "maximum_absolute_price_difference": 0.0,
+      "prices": 60,
+      "source": "the three ZIPs of this candidate extracted to a clean folder; python model/script.py"
+    },
+    "weights_origin": "weights.joblib = split_slim.py applied to the train.py output (sha256 f32eb78d9d2497387b6e4ac8aafe1081d95420592deecfa8360e661de8bd07ae) produced in this environment"
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.14.8",
+  "randomness": "ExtraTrees / HistGradientBoosting with random_state=0; ExtraTrees n_jobs=4.",
+  "rules": {
+    "cabbage": {
+      "method": "pooled_mw+ewma+seas",
+      "shrink": 0.9261
+    },
+    "dried_pepper": {
+      "method": "last",
+      "shrink": 1.0
+    },
+    "garlic": {
+      "method": "last",
+      "shrink": 1.0
+    },
+    "onion": {
+      "method": "et_clip",
+      "shrink": 0.9773
+    },
+    "radish": {
+      "method": "et_mf3_e20_wx+ewma50",
+      "shrink": 0.9387
+    }
+  },
+  "schema": "nongnet-reproduction-v1",
+  "track": "long2",
+  "training": {
+    "bank_cutoffs": {
+      "A (origins <= 2024-12-31)": "2024-12-30",
+      "B (later origins)": "2024-12-31"
+    },
+    "command_from_model_directory": "python train.py --out retrained.joblib",
+    "data": "training/2020-2024 (price, settled volume, origin-market grade price/arrivals, Garak and national settlement, weather, holidays)",
+    "files": [
+      {
+        "path": "training/2020-2024/가격_일별_2020_2024.csv",
+        "sha256": "b6ee8aa50ff6c9a938d3fda89fba9fdeeb3d397cb453b2fce37f9c0e80775fa9"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/물량_일별_2020_2024.csv",
+        "sha256": "c07f1abc6cbf7f3cd3f7f87acd3556d022fa6608d3e787d3e3a3076273816cbb"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/날씨와공휴일_2020_2024/weather_daily.csv",
+        "sha256": "13f4e8a8fa4199c04f4c8dc65571301198c217666ad32cd0812d2fc62b065a2f"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/날씨와공휴일_2020_2024/public_holidays.csv",
+        "sha256": "6164030abbd3b9908977959ad95dabc12b334fcdbd30da5ec5bf29d77dd3c71c"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/날씨와공휴일_2020_2024/README.md",
+        "sha256": "d36b12e3f6af075d57c6766353aa615de069e3d80a46a424a1c6ce74c1d4e2de"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/날씨와공휴일_2020_2024/DATA_DICTIONARY.json",
+        "sha256": "cd6dd3bd42acfc647fb7cc9cba0130addb81b45e1e089a67fe372df3322fba2e"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/날씨와공휴일_2020_2024/TRAINING_MANIFEST.json",
+        "sha256": "b36de592ab6c90292cb7da73218386be2987aa790de109f3e710131f9be03479"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/시장별_경락정보_2020_2024/origin_daily.csv",
+        "sha256": "a8c3a9f22326aa934e4a4b29224a5bfe318bed161a8690f42388180117f518aa"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/시장별_경락정보_2020_2024/garak_daily.csv",
+        "sha256": "ae204489197e58c8be4354e12c8807a0e66c7791663e68f1ed203e7330305c2d"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/시장별_경락정보_2020_2024/wholesale_daily.csv",
+        "sha256": "4a5dfd83cc6cb5335f300849c21b23771f1211f14ddfc422cf49bb6013e3a8b2"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/시장별_경락정보_2020_2024/README.md",
+        "sha256": "31c9cdd9d7d40385dd534f1bc495e6574199fbc4c47d5f3fbe6acb5aff356a59"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/시장별_경락정보_2020_2024/DATA_DICTIONARY.json",
+        "sha256": "4ce20973418db3a3b4bf70dae2f9d22ef6630f6b61d0293605dee77edc431e11"
+      },
+      {
+        "path": "training/2020-2024/Supplementary/시장별_경락정보_2020_2024/TRAINING_MANIFEST.json",
+        "sha256": "a3b73adc12587970f49de9c9123086ff2a1060d48f0eecc3043996ca6483bab3"
+      }
+    ],
+    "origins": "2020-07-01 .. 2024-12-30",
+    "slope_implementation": "short: stabilized OLS; long banks: centered np.polyfit. Inference remains stabilized OLS for all tracks."
+  }
+}

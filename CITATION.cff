@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "이 저장소를 인용할 때 아래 정보를 사용해 주세요."
+title: "경계를 지키는 농산물 가격 예보 — 2026 AI 농산물 가격예측 해커톤 본선 모델 (hackathon-ensemble-v11-zero)"
+type: software
+authors:
+  - name: "IMPACT Lab"
+  - family-names: "Park"
+    given-names: "Jun"
+    affiliation: "GIST AI Policy and Strategy"
+repository-code: "https://github.com/parkjohn10277/agri-price-forecast-2026"
+version: "v11-zero-linux"
+date-released: "2026-11-08"
+keywords:
+  - agricultural price forecasting
+  - time series
+  - ExtraTrees
+  - gradient boosting
+  - reproducibility

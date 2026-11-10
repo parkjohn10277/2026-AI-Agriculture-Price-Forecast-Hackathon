@@ -1,0 +1,464 @@
+{
+  "bank_variants": {
+    "b1_coint": {
+      "base": "e20",
+      "feature_set": "coint",
+      "kind": "et",
+      "max_features": 0.3,
+      "min_samples_leaf": 15,
+      "n_estimators": 15,
+      "table": "block1",
+      "tracks": [
+        "short"
+      ]
+    },
+    "et": {
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": {
+        "long1": 15,
+        "long2": 15,
+        "short": 30
+      },
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      }
+    },
+    "et_clip": {
+      "clip": [
+        0.6,
+        0.8
+      ],
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 15,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "long1",
+        "long2"
+      ]
+    },
+    "et_e20": {
+      "base": "e20",
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": {
+        "long1": 15,
+        "long2": 15,
+        "short": 30
+      },
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      }
+    },
+    "et_hg": {
+      "hgroups": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 30,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "short"
+      ]
+    },
+    "et_hg_e20": {
+      "base": "e20",
+      "hgroups": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 30,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "short"
+      ]
+    },
+    "et_hg_e20_x3": {
+      "base": "e20",
+      "feature_set": "x3",
+      "hgroups": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 30,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "short"
+      ]
+    },
+    "et_hg_x3": {
+      "feature_set": "x3",
+      "hgroups": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 30,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "short"
+      ]
+    },
+    "et_mf3": {
+      "kind": "et",
+      "max_features": 0.3,
+      "min_samples_leaf": {
+        "long1": 15,
+        "long2": 15,
+        "short": 30
+      },
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      }
+    },
+    "et_mf3_e20": {
+      "base": "e20",
+      "kind": "et",
+      "max_features": 0.3,
+      "min_samples_leaf": 15,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "long1",
+        "long2"
+      ]
+    },
+    "et_mf3_e20_wx": {
+      "base": "e20",
+      "feature_set": "wxcr_nov2",
+      "kind": "et",
+      "max_features": 0.3,
+      "min_samples_leaf": 15,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "tracks": [
+        "long1",
+        "long2"
+      ]
+    },
+    "et_s60": {
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 15,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "seasonal_window": 60,
+      "tracks": [
+        "long1",
+        "long2"
+      ]
+    },
+    "et_s60_wx": {
+      "feature_set": "wxcr",
+      "kind": "et",
+      "max_features": 0.5,
+      "min_samples_leaf": 15,
+      "n_estimators": {
+        "long1": 25,
+        "long2": 25,
+        "short": 15
+      },
+      "seasonal_window": 60,
+      "tracks": [
+        "long1",
+        "long2"
+      ]
+    },
+    "gbm_coint": {
+      "feature_set": "coint",
+      "kind": "gbm",
+      "mape_weight": true,
+      "tracks": [
+        "long2"
+      ]
+    },
+    "pooled": {
+      "kind": "gbm"
+    },
+    "pooled_l31": {
+      "kind": "gbm",
+      "learning_rate": 0.02,
+      "max_iter": 400,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": {
+        "long1": 40,
+        "long2": 40,
+        "short": 60
+      },
+      "tracks": [
+        "long1",
+        "long2"
+      ]
+    },
+    "pooled_l7": {
+      "kind": "gbm",
+      "l2_regularization": 5.0,
+      "max_iter": 200,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 150,
+      "tracks": [
+        "short"
+      ]
+    },
+    "pooled_mw": {
+      "kind": "gbm",
+      "mape_weight": true
+    },
+    "q45": {
+      "kind": "gbm",
+      "loss": "quantile",
+      "quantile": 0.45
+    }
+  },
+  "chuseok_block": {},
+  "chuseok_short": {},
+  "docs": {
+    "holidays": "Holiday windows and strengths are fixed in holiday_short / holiday_block. Offsets are calendar days relative to the closure boundary. Short multipliers use round(exp(0.75*mean_fold_log_residual),4); long1 Seollal radish uses round(exp(0.50*mean_fold_log_residual),4). The validator checks these recipes without selecting the windows or strengths.",
+    "methods": "Fixed ExtraTrees / HistGradientBoosting forecasts of log(target/last_price) relative to an EWMA baseline. A|B is an equal log-space blend; h1last uses the last price at horizon 1. No fitting or residual-feedback adaptation occurs during inference.",
+    "protocol": "Evaluation of the fixed configuration on 2020-2024 data and verification of its numerical recipes. The script does not search over methods, holiday windows, mixture weights or damping strengths; it does not establish the historical selection procedure. See validation_2020_2024.json diagnostic_scope for the feature implementation and calibration/evaluation overlap.",
+    "scales": "The exact configured scale factors are in rules. validate_2020_2024.py checks the stated numerical recipes against 2022-2024 forward-fold residuals. The onion factor is a fixed scale factor, not mean-residual bias centering.",
+    "state_space": "Configuration key retained for compatibility. Static volatility damping plog -= lam*vol30^2*(h/10), followed by price-space interpolation with anchor weight w_max*(h/10). This is not a fitted Kalman filter.",
+    "submission": "10일 예측 모델. train.py reads only the 2020-2024 training bundle. Observed inference inputs are selected by case with date < origin; public-holiday dates are calendar inputs. Cases and target windows are read from input/cases.json.",
+    "volshrink": "Fixed volatility-dependent log-price adjustment plog -= c*vol30^2*h. No claim of MAPE optimality is made."
+  },
+  "gbm_params": {
+    "l2_regularization": 2.0,
+    "learning_rate": 0.03,
+    "loss": "absolute_error",
+    "max_iter": 300,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": {
+      "long1": 60,
+      "long2": 60,
+      "short": 100
+    },
+    "random_state": 0
+  },
+  "holiday_block": {
+    "설날": {
+      "long1": {
+        "radish": {
+          "0": 1.1159,
+          "1": 1.1159,
+          "2": 1.1159
+        }
+      }
+    }
+  },
+  "holiday_guard": {},
+  "holiday_short": {
+    "설날": {
+      "cabbage": [
+        [
+          1,
+          5,
+          1.1365
+        ]
+      ]
+    },
+    "추석": {
+      "cabbage": [
+        [
+          -1,
+          -1,
+          1.2276
+        ]
+      ],
+      "radish": [
+        [
+          -3,
+          -3,
+          1.0985
+        ],
+        [
+          -1,
+          -1,
+          1.0985
+        ]
+      ]
+    }
+  },
+  "origins_start": "2020-07-01",
+  "package_track": "short",
+  "pruned_banks": {
+    "kept": [
+      "b1_coint",
+      "et",
+      "et_hg_e20_x3",
+      "et_hg_x3",
+      "et_mf3",
+      "pooled_mw"
+    ],
+    "reason": "only banks read by this track's rules; train.py still trains all"
+  },
+  "rules": {
+    "long1": {
+      "cabbage": {
+        "method": "pooled_mw+ewma+seas",
+        "shrink": 0.9442
+      },
+      "dried_pepper": {
+        "method": "last",
+        "shrink": 1.0
+      },
+      "garlic": {
+        "method": "last",
+        "shrink": 1.0
+      },
+      "onion": {
+        "method": "et|et+block|et+ewma+seas",
+        "shrink": 0.9827,
+        "volshrink": 0.25
+      },
+      "radish": {
+        "method": "et_mf3_e20_wx",
+        "shrink": 0.9553
+      }
+    },
+    "long2": {
+      "cabbage": {
+        "method": "pooled_mw+ewma+seas",
+        "shrink": 0.9261
+      },
+      "dried_pepper": {
+        "method": "last",
+        "shrink": 1.0
+      },
+      "garlic": {
+        "method": "last",
+        "shrink": 1.0
+      },
+      "onion": {
+        "method": "et_clip",
+        "shrink": 0.9773
+      },
+      "radish": {
+        "method": "et_mf3_e20_wx+ewma50",
+        "shrink": 0.9387
+      }
+    },
+    "short": {
+      "cabbage": {
+        "method": "et",
+        "shrink": 1.0,
+        "state_space": {
+          "lam": 0.1,
+          "target": "ewma50+0.5seas",
+          "w_max": 0.25
+        }
+      },
+      "dried_pepper": {
+        "method": "last",
+        "shrink": 1.0
+      },
+      "garlic": {
+        "method": "last",
+        "shrink": 1.0
+      },
+      "onion": {
+        "method": "h1last_et_hg_e20_x3",
+        "shrink": 1.0086
+      },
+      "radish": {
+        "method": "et+block|et_mf3+block|et_hg_x3+block|pooled_mw+block|b1_coint|b1_coint",
+        "shrink": 0.9813,
+        "state_space": {
+          "lam": 0.75,
+          "target": "block",
+          "w_max": 0.25
+        }
+      }
+    }
+  },
+  "train_items": [
+    "cabbage",
+    "radish",
+    "onion",
+    "garlic",
+    "dried_pepper"
+  ],
+  "version": "hackathon-ensemble-v11-zero"
+}
