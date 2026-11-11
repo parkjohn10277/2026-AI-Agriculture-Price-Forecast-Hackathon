@@ -25,11 +25,24 @@
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
 
+<sub>🇺🇸 <a href="#english-summary">English summary</a></sub>
+
 **[팀](#-팀)**&nbsp;&nbsp;·&nbsp;&nbsp;**[리더보드](#-본선-리더보드)**&nbsp;&nbsp;·&nbsp;&nbsp;**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[자료 내려받기](#-자료-내려받기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**&nbsp;&nbsp;·&nbsp;&nbsp;**[언론 보도](#-언론-보도)**&nbsp;&nbsp;·&nbsp;&nbsp;**[참고 문헌](#-참고-문헌과-관련-정보)**
 
 </div>
 
 ---
+
+## English summary
+
+**HarvestCast** is Team IMPACT Lab's final model for the **2026 AI Agricultural Price Forecasting Hackathon** in Korea (2026 AI 농산물 가격예측 온라인 해커톤). Out of 394 preliminary teams, 15 reached the final round, where the team placed **2nd overall (provisional)** and 2nd in all three tracks.
+
+- **Task:** forecast Korean wholesale prices of five crops (napa cabbage, radish, onion, peeled garlic and dried red pepper): daily prices 10 days ahead, and 10-day-period (*sun*) averages two and three periods ahead.
+- **Data:** official wholesale-market settlement prices and volumes, producer-market auctions and weather, used only from 2020–2024. The data structure itself ensures each forecast reads only observations from before its reference date, so there is no look-ahead leakage.
+- **Model:** a pooled ExtraTrees and HistGradientBoosting bank that predicts log price changes, followed by fixed rules for each crop and track. It runs on CPU only, and its predictions replay byte-identically.
+- **Final-round MAPE:** 9.73% overall, against 12.07% for a last-value baseline, with the largest gains on the long horizons (−27% and −37% error).
+
+**Keywords:** agricultural commodity price forecasting, crop price prediction, Korea, time series forecasting, ExtraTrees, gradient boosting, leakage-free feature engineering, reproducible machine learning, hackathon
 
 ## 👥 팀
 
