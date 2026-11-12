@@ -13,27 +13,41 @@
 
 <p><b>HarvestCast</b> (Harvest + Forecast) — 허용된 과거만 보고, 기준일 이전만 읽는 농산물 가격 예보</p>
 
-[![Leaderboard](https://img.shields.io/badge/본선%20잠정%20순위-🥈%202위%20%2F%2015팀-C98E52?style=for-the-badge)](#-본선-리더보드)
-[![Python](https://img.shields.io/badge/CPython-3.14.8-12805A?style=for-the-badge&logo=python&logoColor=white)](model/requirements.txt)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-12805A?style=for-the-badge&logo=scikitlearn&logoColor=white)](model/requirements.txt)
-[![CPU only](https://img.shields.io/badge/compute-CPU%20only-0E5B52?style=for-the-badge)](#-재현하기)
-[![Reproducible](https://img.shields.io/badge/replay-600%2F60%2F60%20byte--identical-C98E52?style=for-the-badge)](docs/REPRODUCIBILITY.md)
-[![Competition](https://img.shields.io/badge/2026%20AI%20농산물%20가격예측-본선-0B4D36?style=for-the-badge)](https://hackathon.imaginationgroup.co.kr/nongnet)
+<p>
+<a href="#-본선-리더보드"><img alt="본선 잠정 2위 / 15팀" src="https://img.shields.io/badge/본선%20잠정-🥈%202위%20%2F%2015팀-C98E52?style=flat-square"></a>
+<a href="#-한눈에-보기"><img alt="종합 MAPE 9.73%" src="https://img.shields.io/badge/종합%20MAPE-9.73%25-12805A?style=flat-square"></a>
+<a href="model/requirements.txt"><img alt="CPython 3.14.8" src="https://img.shields.io/badge/CPython-3.14.8-0E5B52?style=flat-square&logo=python&logoColor=white"></a>
+<a href="model/requirements.txt"><img alt="scikit-learn 1.9.1" src="https://img.shields.io/badge/scikit--learn-1.9.1-0E5B52?style=flat-square&logo=scikitlearn&logoColor=white"></a>
+<a href="#-재현하기"><img alt="CPU only" src="https://img.shields.io/badge/compute-CPU%20only-0E5B52?style=flat-square"></a>
+<a href="docs/REPRODUCIBILITY.md"><img alt="byte-identical replay" src="https://img.shields.io/badge/replay-byte--identical-C98E52?style=flat-square"></a>
+</p>
 
 **본선 최종 제출 모델 · Team IMPACT Lab**<br/><sub>Maximiliano Islas Solis (Team Leader) · 박준 · 최연규 — with thanks to <a href="https://impact.gist.ac.kr/main/main.php">GIST IMPACT Lab</a></sub>
 
 배추 · 무 · 양파 · 깐마늘 · 건고추의 **10일 일별 가격**과 **2순 후 · 3순 후 순 평균가격**을 예측하는 모델입니다.<br/>
 2020–2024년 자료로만 학습하고, 각 기준일 **이전** 관측만 읽도록 데이터 구조 자체로 경계를 강제했습니다.
 
-<sub>🇺🇸 <a href="#english-summary">English summary</a></sub>
-
-**[팀](#-팀)**&nbsp;&nbsp;·&nbsp;&nbsp;**[리더보드](#-본선-리더보드)**&nbsp;&nbsp;·&nbsp;&nbsp;**[결과](#-결과)**&nbsp;&nbsp;·&nbsp;&nbsp;**[대회](#-대회와-과제)**&nbsp;&nbsp;·&nbsp;&nbsp;**[자료 내려받기](#-자료-내려받기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[핵심 아이디어](#-핵심-아이디어)**&nbsp;&nbsp;·&nbsp;&nbsp;**[데이터와 경계](#-데이터와-미래-정보-차단)**&nbsp;&nbsp;·&nbsp;&nbsp;**[모델](#-모델)**&nbsp;&nbsp;·&nbsp;&nbsp;**[검증](#-20222024-전진-검증)**&nbsp;&nbsp;·&nbsp;&nbsp;**[재현하기](#-재현하기)**&nbsp;&nbsp;·&nbsp;&nbsp;**[문서](#-문서)**&nbsp;&nbsp;·&nbsp;&nbsp;**[언론 보도](#-언론-보도)**&nbsp;&nbsp;·&nbsp;&nbsp;**[참고 문헌](#-참고-문헌과-관련-정보)**
+<b>
+<a href="#-팀">팀</a> &nbsp;·&nbsp;
+<a href="#-본선-리더보드">리더보드</a> &nbsp;·&nbsp;
+<a href="#-결과">결과</a> &nbsp;·&nbsp;
+<a href="#-핵심-아이디어">핵심 아이디어</a> &nbsp;·&nbsp;
+<a href="#-모델">모델</a> &nbsp;·&nbsp;
+<a href="#-20222024-전진-검증">검증</a> &nbsp;·&nbsp;
+<a href="#-재현하기">재현하기</a> &nbsp;·&nbsp;
+<a href="#-자료-내려받기">자료</a> &nbsp;·&nbsp;
+<a href="#english-summary">English</a>
+</b>
 
 </div>
 
 ---
 
-## English summary
+<a id="english-summary"></a>
+
+<details>
+<summary><b>🇺🇸 English summary</b></summary>
+<br>
 
 **HarvestCast** is Team IMPACT Lab's final model for the **2026 AI Agricultural Price Forecasting Hackathon** in Korea (2026 AI 농산물 가격예측 온라인 해커톤). Out of 394 preliminary teams, 15 reached the final round, where the team placed **2nd overall (provisional)** and 2nd in all three tracks.
 
@@ -43,6 +57,8 @@
 - **Final-round MAPE:** 9.73% overall, against 12.07% for a last-value baseline, with the largest gains on the long horizons (−27% and −37% error).
 
 **Keywords:** agricultural commodity price forecasting, crop price prediction, Korea, time series forecasting, ExtraTrees, gradient boosting, leakage-free feature engineering, reproducible machine learning, hackathon
+
+</details>
 
 ## 👥 팀
 
@@ -57,29 +73,30 @@ Team IMPACT Lab은 광주과학기술원(GIST) AI정책전략대학원(AIX) <b>�
 
 <table>
   <tr>
-    <td align="center" valign="middle" width="33%"><img src="assets/photo-max.png" width="140" alt="Maximiliano Islas Solis"/></td>
-    <td align="center" valign="middle" width="33%"><img src="assets/photo-park-jun.png" width="140" alt="박준"/></td>
-    <td align="center" valign="middle" width="33%"><img src="assets/photo-choi-yeonkyu.png" width="140" alt="최연규"/></td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle" width="33%"><h3>Maximiliano Islas Solis</h3><b>⭐ Team Leader</b></td>
-    <td align="center" valign="middle" width="33%"><h3>박준</h3><b>John Park</b></td>
-    <td align="center" valign="middle" width="33%"><h3>최연규</h3><b>Yeonkyu Choi</b></td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></td>
-    <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></td>
-    <td align="center" valign="middle" width="33%">M.S. Course · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle" width="33%">Data Analysis &amp;<br/>ML Econometrics</td>
-    <td align="center" valign="middle" width="33%">Semiconductor &amp; Financial<br/>Data Forecasting<br/>AI Strategy &amp; Data Analytics</td>
-    <td align="center" valign="middle" width="33%">Agricultural Production Analysis<br/>Earth Environment</td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle" width="33%"><a href="https://github.com/MaximilianoIS"><b>@MaximilianoIS</b></a></td>
-    <td align="center" valign="middle" width="33%"><a href="https://github.com/parkjohn10277"><b>@parkjohn10277</b></a></td>
-    <td align="center" valign="middle" width="33%"><a href="https://github.com/dkrh2539"><b>@dkrh2539</b></a></td>
+    <td align="center" valign="top" width="33%">
+      <img src="assets/photo-max.png" width="200" alt="Maximiliano Islas Solis"><br>
+      <h3>Maximiliano Islas Solis</h3>
+      <b>⭐ Team Leader</b><br>
+      <sub>M.S. · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br>
+      <sub>Data analysis · ML econometrics</sub><br><br>
+      <a href="https://github.com/MaximilianoIS"><img src="https://img.shields.io/badge/@MaximilianoIS-181717?style=flat-square&logo=github" alt="GitHub MaximilianoIS"></a>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <img src="assets/photo-park-jun.png" width="200" alt="박준"><br>
+      <h3>박준</h3>
+      <b>John Park</b><br>
+      <sub>M.S. · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br>
+      <sub>Semiconductor &amp; financial forecasting · AI strategy</sub><br><br>
+      <a href="https://github.com/parkjohn10277"><img src="https://img.shields.io/badge/@parkjohn10277-181717?style=flat-square&logo=github" alt="GitHub parkjohn10277"></a>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <img src="assets/photo-choi-yeonkyu.png" width="200" alt="최연규"><br>
+      <h3>최연규</h3>
+      <b>Yeonkyu Choi</b><br>
+      <sub>M.S. · <a href="https://impact.gist.ac.kr/team/students.php">GIST IMPACT Lab</a></sub><br>
+      <sub>Agricultural production analysis · Earth environment</sub><br><br>
+      <a href="https://github.com/dkrh2539"><img src="https://img.shields.io/badge/@dkrh2539-181717?style=flat-square&logo=github" alt="GitHub dkrh2539"></a>
+    </td>
   </tr>
 </table>
 
@@ -146,10 +163,7 @@ Team IMPACT Lab은 광주과학기술원(GIST) AI정책전략대학원(AIX) <b>�
 
 ## 🏆 대회와 과제
 
-<div align="center">
-<img alt="2026 AI 농산물 가격예측 온라인 해커톤 포스터" src="assets/competition-poster.jpg" width="92%">
-<br/><sub>2026 AI 농산물 가격예측 온라인 해커톤 · 주최 농림축산식품부 · 한국농수산식품유통공사(aT) · 주관 상상력집단 · <a href="https://hackathon.imaginationgroup.co.kr/nongnet">대회 페이지</a></sub>
-</div>
+<sub>2026 AI 농산물 가격예측 온라인 해커톤 · 주최 농림축산식품부 · 한국농수산식품유통공사(aT) · 주관 상상력집단 · <a href="https://hackathon.imaginationgroup.co.kr/nongnet">대회 페이지</a></sub>
 
 <br/>
 
@@ -475,7 +489,7 @@ make validate          # 2022–2024 전진 검증 재계산 → JSON과 대조
 <br/>
 
 <div align="center">
-  <a href="https://impact.gist.ac.kr/team/professor.php"><img src="assets/photo-prof-kong.png" width="150" alt="Prof. Duk-Jo Kong"/></a>
+  <a href="https://impact.gist.ac.kr/team/professor.php"><img src="assets/photo-prof-kong.png" width="200" alt="Prof. Duk-Jo Kong"/></a>
   <h3>Prof. Duk-Jo Kong · 공득조 교수님</h3>
   Vice Dean, Assistant Professor<br/>
   GIST AI Policy &amp; Strategy Graduate School (AIX School)<br/>
